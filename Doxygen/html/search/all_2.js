@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['dados_20🏁_0',['Projeto prático - Estrutura de Dados 🏁',['../index.html',1,'']]],
-  ['de_20dados_20🏁_1',['Projeto prático - Estrutura de Dados 🏁',['../index.html',1,'']]],
+  ['dados_20🗼🇻🇳_0',['Projeto prático - Estrutura de Dados - 🗼🇻🇳',['../index.html',1,'']]],
+  ['de_20dados_20🗼🇻🇳_1',['Projeto prático - Estrutura de Dados - 🗼🇻🇳',['../index.html',1,'']]],
   ['deque_2',['deque',['../structdeque.html',1,'']]],
   ['deque_2ec_3',['deque.c',['../deque_8c.html',1,'']]],
   ['deque_2eh_4',['deque.h',['../deque_8h.html',1,'']]],
