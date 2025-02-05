@@ -1,4 +1,4 @@
-# Projeto prático - Estrutura de Dados 🏁	
+# Projeto prático - Estrutura de Dados - 🗼🇻🇳
 
 O projeto prático em grupo consiste na implementação de uma aplicação que utilize pelo menos duas estruturas de dados lineares.
 Trabalhamos com a implementação destas estruturas de forma encapsulada, respeitando o conceito de TAD<sup>[1](#tad-note)</sup> em cada API.
@@ -7,7 +7,11 @@ As estruturas implementadas foram:
 1. **DEQUE** com alocação dinâmica e sequencial;
 2. **Lista** com alocação dinâmica, duplamente encadeada, circular e com sentinela.
    
-O projeto consiste em um simples jogo de corrida, onde o usuário é capaz de controlar eventos como boost de velocidade e adição/eliminação de competidores. Ademais, este trabalho conta com documentação e disponibilização pública.
+O projeto consiste em um antigo quebra-cabeça chamado de **Torre de Hanói**, o jogo está separado em fases com dificuldade -e número de discos- crescente.  
+
+O quebra-cabeça consiste em uma base com três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo. O problema consiste em passar todos os discos de um pino para um outro qualquer, usando um dos pinos como auxiliar, de maneira que **um disco maior nunca fique em cima de outro menor** em nenhuma situação.  
+
+Leia mais [aqui](https://pt.wikipedia.org/wiki/Torre_de_Han%C3%B3i)
 
 ---
 
