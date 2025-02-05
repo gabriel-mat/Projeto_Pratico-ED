@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['array_0',['array',['../structdeque.html#a27e65791d615b4de7dc8fa7fd0a85489',1,'deque']]]
+  ['cheia_0',['cheia',['../deque_8c.html#a16271b86a640899d506e407df965ece1',1,'cheia(deque *d):&#160;deque.c'],['../deque_8h.html#a16271b86a640899d506e407df965ece1',1,'cheia(deque *d):&#160;deque.c']]]
 ];

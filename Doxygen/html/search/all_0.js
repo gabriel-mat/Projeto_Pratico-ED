@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_3acheckered_5fflag_3a_0',['Projeto prático - Estrutura de Dados \emoji :checkered_flag:',['../index.html',1,'']]]
+  ['array_0',['array',['../structdeque.html#a27e65791d615b4de7dc8fa7fd0a85489',1,'deque']]]
 ];

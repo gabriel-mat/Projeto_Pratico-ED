@@ -1,4 +1,4 @@
-# Projeto prático - Estrutura de Dados \emoji :checkered_flag:	
+# Projeto prático - Estrutura de Dados 🏁	
 
 O projeto prático em grupo consiste na implementação de uma aplicação que utilize pelo menos duas estruturas de dados lineares.
 Trabalhamos com a implementação destas estruturas de forma encapsulada, respeitando o conceito de TAD<sup>[1](#tad-note)</sup> em cada API.

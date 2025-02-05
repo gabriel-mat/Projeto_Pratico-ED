@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['max_5fsize_0',['max_size',['../structdeque.html#a79e1c28868e63d6c55899d26fa5514f4',1,'deque']]]
+  ['prático_20estrutura_20de_20dados_20🏁_0',['Projeto prático - Estrutura de Dados 🏁',['../index.html',1,'']]],
+  ['projeto_20prático_20estrutura_20de_20dados_20🏁_1',['Projeto prático - Estrutura de Dados 🏁',['../index.html',1,'']]]
 ];

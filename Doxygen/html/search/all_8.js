@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['prático_20estrutura_20de_20dados_20emoji_20_3acheckered_5fflag_3a_0',['Projeto prático - Estrutura de Dados \emoji :checkered_flag:',['../index.html',1,'']]],
-  ['projeto_20prático_20estrutura_20de_20dados_20emoji_20_3acheckered_5fflag_3a_1',['Projeto prático - Estrutura de Dados \emoji :checkered_flag:',['../index.html',1,'']]]
+  ['qtd_0',['qtd',['../structdeque.html#a424c1f055f3595e3e97dd84684799a31',1,'deque']]]
 ];
