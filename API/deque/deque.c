@@ -1,7 +1,23 @@
+/**
+ * \file deque.c
+ * \authors André, Arthur, Gabriel e Otávio
+ * \brief Implementação de um deque
+ * \version 0.1
+ *
+ * \details Este arquivo contém a implementação das funções de um deque.
+ */
 #include "deque.h"
 #include <stdlib.h>
 
-int inicializa_deque(deque *d, unsigned maxsize) {
+/**
+ * \brief Inicializa um deque
+ *
+ * \param d ponteiro para o deque
+ * \param maxsize tamanho máximo do deque
+ * \return int 0 se inicializou com sucesso, 1 caso contrário
+ */
+int inicializa_deque(deque *d, unsigned maxsize)
+{
   d->array = (T *)malloc(TAM_MAX_DEQUE * sizeof(T));
 
   if (d->array == NULL)
@@ -14,7 +30,14 @@ int inicializa_deque(deque *d, unsigned maxsize) {
   return 0;
 }
 
-int destroi_deque(deque *d) {
+/**
+ * \brief Destroi um deque
+ *
+ * \param d ponteiro para o deque
+ * \return int 0 se destruiu com sucesso, 1 caso contrário
+ */
+int destroi_deque(deque *d)
+{
   if (d == NULL)
     return 1;
 
@@ -23,11 +46,31 @@ int destroi_deque(deque *d) {
   return 0;
 }
 
+/**
+ * \brief Verifica se o deque está vazio
+ *
+ * \param d ponteiro para o deque
+ * \return int 1 se vazio, 0 caso contrário
+ */
 int vazia(deque *d) { return (d->qtd == 0); }
 
+/**
+ * \brief Verifica se o deque está cheio
+ *
+ * \param d ponteiro para o deque
+ * \return int 1 se cheio, 0 caso contrário
+ */
 int cheia(deque *d) { return (d->qtd == d->max_size); }
 
-int insereI(deque *d, T data) {
+/**
+ * \brief Insere um elemento no início do deque
+ *
+ * \param d ponteiro para o deque
+ * \param data elemento a ser inserido
+ * \return int 0 se inseriu com sucesso, 1 caso contrário
+ */
+int insereI(deque *d, T data)
+{
   if (cheia(d))
     return 1;
 
@@ -37,7 +80,15 @@ int insereI(deque *d, T data) {
   return 0;
 }
 
-int insereF(deque *d, T data) {
+/**
+ * \brief Insere um elemento no fim do deque
+ *
+ * \param d ponteiro para o deque
+ * \param data elemento a ser inserido
+ * \return int 0 se inseriu com sucesso, 1 caso contrário
+ */
+int insereF(deque *d, T data)
+{
   if (cheia(d))
     return 1;
 
@@ -47,7 +98,14 @@ int insereF(deque *d, T data) {
   return 0;
 }
 
-int removeI(deque *d) {
+/**
+ * \brief Remove um elemento do início do deque
+ *
+ * \param d ponteiro para o deque
+ * \return int 0 se removeu com sucesso, 1 caso contrário
+ */
+int removeI(deque *d)
+{
   if (vazia(d))
     return 1;
 
@@ -56,7 +114,14 @@ int removeI(deque *d) {
   return 0;
 }
 
-int removeF(deque *d) {
+/**
+ * \brief Remove um elemento do fim do deque
+ *
+ * \param d ponteiro para o deque
+ * \return int 0 se removeu com sucesso, 1 caso contrário
+ */
+int removeF(deque *d)
+{
   if (vazia(d))
     return 1;
 
@@ -65,13 +130,27 @@ int removeF(deque *d) {
   return 0;
 }
 
-int *elementoI(deque *d) {
+/**
+ * \brief Retorna o elemento do início do deque
+ *
+ * \param d ponteiro para o deque
+ * \return int* ponteiro para o elemento do início, NULL se vazio
+ */
+int *elementoI(deque *d)
+{
   if (vazia(d))
     return NULL;
   return &(d->array[(d->inicio + 1 + d->max_size) % d->max_size]);
 }
 
-int *elementoF(deque *d) {
+/**
+ * \brief Retorna o elemento do fim do deque
+ *
+ * \param d ponteiro para o deque
+ * \return int* ponteiro para o elemento do fim, NULL se vazio
+ */
+int *elementoF(deque *d)
+{
   if (vazia(d))
     return NULL;
   return &(d->array[(d->fim - 1 + d->max_size) % d->max_size]);
