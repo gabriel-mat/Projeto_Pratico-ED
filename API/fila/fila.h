@@ -15,9 +15,9 @@ typedef struct fila{
 
 void fila_inicializa(fila *f, unsigned maxsize);
 void fila_destruir(fila *f);
-void fila_inserir(fila *f, T data);
+int fila_inserir(fila *f, T data);
 int fila_remover(fila *f);
-int fila_quantidade(fila *f);
+unsigned fila_quantidade(fila *f);
 int fila_vazia(fila *f);
 T  *fila_inicio_data(fila *f);
 T  *fila_fim_data(fila *f);

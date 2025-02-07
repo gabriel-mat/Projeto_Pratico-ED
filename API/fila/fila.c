@@ -15,8 +15,11 @@ void fila_destruir(fila *f){
     sentinela = NULL;
 }
 
-void fila_inserir(fila *f, T data){
+int fila_inserir(fila *f, T data){
     node *n = (node *)malloc(sizeof(node));
+
+    if(n == NULL)
+        return 1;
     
     n->data = data;
     n->next = f->sentinela;
@@ -25,22 +28,44 @@ void fila_inserir(fila *f, T data){
     f->sentinela->prev = n;
     n->prev->next = n;
     f->qtd++;
+
+    return 0;
 }
 
 int fila_remover(fila *f){
-    if(fila_vazia(f))
-        return 0;
-
+    node *temp;
     
+    if(fila_vazia(f))
+        return 1;
+
+    temp = f->sentinela->next;
+    f->sentinela->next = temp->next;
+    temp->next->prev = f->sentinela;
+    free(temp);
     
     f->qtd--;
+
+    return 0;
 }   
 
-int fila_quantidade(fila *f);
+unsigned fila_quantidade(fila *f){
+    return f->qtd;
+}
 
 int fila_vazia(fila *f){
     return (f->qtd == 0);
 }
 
-T  *fila_inicio_data(fila *f);
-T  *fila_fim_data(fila *f);
+T  *fila_inicio_data(fila *f){
+    if(fila_vazia(f))
+        return NULL;
+
+    return &(f->sentinela->next);
+}
+
+T  *fila_fim_data(fila *f){
+    if(fila_vazia(f))
+        return NULL;
+
+    return &(f->sentinela->prev);
+}
