@@ -11,7 +11,7 @@
  * \brief Tamanho máximo do deque
  *
  */
-#define TAM_MAX_DEQUE 100000
+#define TAM_MAX_DEQUE 1000
 
 /**
  * \brief Renomeia o tipo de dado do deque
