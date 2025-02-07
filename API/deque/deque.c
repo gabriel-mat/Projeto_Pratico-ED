@@ -8,6 +8,7 @@
  */
 #include "deque.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * \brief Inicializa um deque
@@ -18,7 +19,7 @@
  */
 int inicializa_deque(deque *d, unsigned maxsize)
 {
-  d->array = (T *)malloc(TAM_MAX_DEQUE * sizeof(T));
+  d->array = (T *)malloc(maxsize * sizeof(T));
 
   if (d->array == NULL)
     return 1;
@@ -154,4 +155,14 @@ int *elementoF(deque *d)
   if (vazia(d))
     return NULL;
   return &(d->array[(d->fim - 1 + d->max_size) % d->max_size]);
+}
+
+/**
+ * \brief Imprime o deque do inicio ao fim
+ *
+ * \param d ponteiro para o deque
+ */
+void imprime_deque(deque *d){
+    for(int i = 0; i < d->qtd; i++)
+      printf("%d ", d->array[(d->inicio + i + 1 + d->max_size) % d->max_size]);
 }

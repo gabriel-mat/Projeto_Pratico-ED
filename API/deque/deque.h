@@ -7,13 +7,6 @@
 #define DEQUE_H
 
 /**
- * \def TAM_MAX_DEQUE
- * \brief Tamanho máximo do deque
- *
- */
-#define TAM_MAX_DEQUE 1000
-
-/**
  * \brief Renomeia o tipo de dado do deque
  *
  */
@@ -110,5 +103,11 @@ int *elementoI(deque *d);
  * \param d ponteiro para o deque
  */
 int *elementoF(deque *d);
+/**
+ * \brief Imprime o deque do inicio ao fim
+ *
+ * \param d ponteiro para o deque
+ */
+void imprime_deque(deque *d);
 
 #endif

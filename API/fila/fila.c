@@ -12,7 +12,7 @@ void fila_destruir(fila *f){
         fila_remover(f);
 
     free(f->sentinela);    
-    sentinela = NULL;
+    f->sentinela = NULL;
 }
 
 int fila_inserir(fila *f, T data){
@@ -60,12 +60,12 @@ T  *fila_inicio_data(fila *f){
     if(fila_vazia(f))
         return NULL;
 
-    return &(f->sentinela->next);
+    return &(f->sentinela->next->data);
 }
 
 T  *fila_fim_data(fila *f){
     if(fila_vazia(f))
         return NULL;
 
-    return &(f->sentinela->prev);
+    return &(f->sentinela->prev->data);
 }
