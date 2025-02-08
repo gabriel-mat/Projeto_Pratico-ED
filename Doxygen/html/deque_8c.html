@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.13.2" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projeto Prático de ED: Referência do Arquivo /home/arthur/Documents/EstruturaDados/Projeto_Pratico-ED/API/deque/deque.c</title>
+  <title>Projeto Prático de ED: Referência do Arquivo /home/gabriel/Desktop/BCC/ED/proj/API/deque/deque.c</title>
   <link rel="icon" href="vietnam2.png" type="image/x-icon" />
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
@@ -121,6 +121,7 @@ $(function(){initNavTree('deque_8c.html',''); initResizable(true); });
 <a href="#details">Mais...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="deque_8h_source.html">deque.h</a>&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funções</h2></td></tr>
@@ -154,6 +155,9 @@ Funções</h2></td></tr>
 <tr class="memitem:af1042614835bac68a1dd59f167fdc9e2" id="r_af1042614835bac68a1dd59f167fdc9e2"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1042614835bac68a1dd59f167fdc9e2">elementoF</a> (<a class="el" href="structdeque.html">deque</a> *d)</td></tr>
 <tr class="memdesc:af1042614835bac68a1dd59f167fdc9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o elemento do fim do deque.  <br /></td></tr>
 <tr class="separator:af1042614835bac68a1dd59f167fdc9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd66d16cd718b215ac3a2d241d3cb03" id="r_a8dd66d16cd718b215ac3a2d241d3cb03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dd66d16cd718b215ac3a2d241d3cb03">imprime_deque</a> (<a class="el" href="structdeque.html">deque</a> *d)</td></tr>
+<tr class="memdesc:a8dd66d16cd718b215ac3a2d241d3cb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime o deque do inicio ao fim.  <br /></td></tr>
+<tr class="separator:a8dd66d16cd718b215ac3a2d241d3cb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Implementação de um deque. </p>
@@ -262,6 +266,31 @@ Funções</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>int* ponteiro para o elemento do início, NULL se vazio </dd></dl>
+
+</div>
+</div>
+<a id="a8dd66d16cd718b215ac3a2d241d3cb03" name="a8dd66d16cd718b215ac3a2d241d3cb03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd66d16cd718b215ac3a2d241d3cb03">&#9670;&#160;</a></span>imprime_deque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imprime_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdeque.html">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime o deque do inicio ao fim. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

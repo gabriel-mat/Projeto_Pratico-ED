@@ -6,8 +6,7 @@ var indexSectionsWithContent =
   3: "cdeirv",
   4: "afimq",
   5: "t",
-  6: "t",
-  7: "dep🗼"
+  6: "dep🗼"
 };
 
 var indexSectionNames =
@@ -18,8 +17,7 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "typedefs",
-  6: "defines",
-  7: "pages"
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -30,7 +28,6 @@ var indexSectionLabels =
   3: "Funções",
   4: "Variáveis",
   5: "Definições de Tipos",
-  6: "Definições e Macros",
-  7: "Páginas"
+  6: "Páginas"
 };
 

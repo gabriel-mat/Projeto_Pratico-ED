@@ -4,6 +4,7 @@ var deque_8c =
     [ "destroi_deque", "deque_8c.html#a76faebe7e9a26b83e5db6b96560f7bbe", null ],
     [ "elementoF", "deque_8c.html#af1042614835bac68a1dd59f167fdc9e2", null ],
     [ "elementoI", "deque_8c.html#a1375489c33f26a9a1a741267db7ecc94", null ],
+    [ "imprime_deque", "deque_8c.html#a8dd66d16cd718b215ac3a2d241d3cb03", null ],
     [ "inicializa_deque", "deque_8c.html#adc8a8737615223e126579d9a78ecde25", null ],
     [ "insereF", "deque_8c.html#a71787307444487fcfa1ccc8cebd606ca", null ],
     [ "insereI", "deque_8c.html#ae644a0ccec51f953128ea17a096442bd", null ],

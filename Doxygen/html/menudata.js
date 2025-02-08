@@ -35,5 +35,4 @@ var menudata={children:[
 {text:"Membros dos Arquivos",url:"globals.html",children:[
 {text:"Todos",url:"globals.html"},
 {text:"Funções",url:"globals_func.html"},
-{text:"Definições de Tipos",url:"globals_type.html"},
-{text:"Definições e Macros",url:"globals_defs.html"}]}]}]}
+{text:"Definições de Tipos",url:"globals_type.html"}]}]}]}
