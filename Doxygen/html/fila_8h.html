@@ -1,0 +1,435 @@
+<!-- HTML header for doxygen 1.13.2-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.13.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto Prático de ED: Referência do Arquivo /home/arthur/Documents/EstruturaDados/Projeto_Pratico-ED/API/fila/fila.h</title>
+  <link rel="icon" href="vietnam2.png" type="image/x-icon" />
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <script type="text/javascript" src="clipboard.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.title = "Mude entre modo claro ou noturno"
+    DoxygenAwesomeDarkModeToggle.lightModeIcon = '🌞'
+    DoxygenAwesomeDarkModeToggle.darkModeIcon = '🌙'
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo_teste_2_hanoi_tower.jpg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">Projeto Prático de ED<span
+                    id="projectnumber">&#160;v1.1</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- Gerado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('fila_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#typedef-members">Definições de Tipos</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo fila.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Protótipos das funções de um deque.  
+<a href="#details">Mais...</a></p>
+
+<p><a href="fila_8h_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode.html">node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura de um nó.  <a href="structnode.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfila.html">fila</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura de uma fila.  <a href="structfila.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definições de Tipos</h2></td></tr>
+<tr class="memitem:af4aeda155dbe167f1c1cf38cb65bf324" id="r_af4aeda155dbe167f1c1cf38cb65bf324"><td class="memItemLeft" align="right" valign="top">typedef struct node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4aeda155dbe167f1c1cf38cb65bf324">node</a></td></tr>
+<tr class="separator:af4aeda155dbe167f1c1cf38cb65bf324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f791f085a438fc76b287e0619e3fcbb" id="r_a0f791f085a438fc76b287e0619e3fcbb"><td class="memItemLeft" align="right" valign="top">typedef struct fila&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f791f085a438fc76b287e0619e3fcbb">fila</a></td></tr>
+<tr class="separator:a0f791f085a438fc76b287e0619e3fcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ac50e48e199b8edcc68938c91c890062e" id="r_ac50e48e199b8edcc68938c91c890062e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac50e48e199b8edcc68938c91c890062e">fila_inicializa</a> (<a class="el" href="structfila.html">fila</a> *f, unsigned maxsize)</td></tr>
+<tr class="memdesc:ac50e48e199b8edcc68938c91c890062e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma fila.  <br /></td></tr>
+<tr class="separator:ac50e48e199b8edcc68938c91c890062e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7012e752fb56a30d9cf8f2060b461894" id="r_a7012e752fb56a30d9cf8f2060b461894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7012e752fb56a30d9cf8f2060b461894">fila_destruir</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
+<tr class="memdesc:a7012e752fb56a30d9cf8f2060b461894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroi uma fila.  <br /></td></tr>
+<tr class="separator:a7012e752fb56a30d9cf8f2060b461894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcda69eefa271b36b321b8bcebbf1af" id="r_a7dcda69eefa271b36b321b8bcebbf1af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dcda69eefa271b36b321b8bcebbf1af">fila_inserir</a> (<a class="el" href="structfila.html">fila</a> *f, <a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> data)</td></tr>
+<tr class="memdesc:a7dcda69eefa271b36b321b8bcebbf1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um elemento no fim da fila.  <br /></td></tr>
+<tr class="separator:a7dcda69eefa271b36b321b8bcebbf1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab468c5345bd01216b5327993e81f6c93" id="r_ab468c5345bd01216b5327993e81f6c93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab468c5345bd01216b5327993e81f6c93">fila_remover</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
+<tr class="memdesc:ab468c5345bd01216b5327993e81f6c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove um elemento do início da fila.  <br /></td></tr>
+<tr class="separator:ab468c5345bd01216b5327993e81f6c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ab52155998b32e2c226f2f79628b17" id="r_a69ab52155998b32e2c226f2f79628b17"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69ab52155998b32e2c226f2f79628b17">fila_quantidade</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
+<tr class="memdesc:a69ab52155998b32e2c226f2f79628b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a quantidade de dados na fila.  <br /></td></tr>
+<tr class="separator:a69ab52155998b32e2c226f2f79628b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15888d13686aac41aeb8ee85cca78e55" id="r_a15888d13686aac41aeb8ee85cca78e55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15888d13686aac41aeb8ee85cca78e55">fila_vazia</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
+<tr class="memdesc:a15888d13686aac41aeb8ee85cca78e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está vazia.  <br /></td></tr>
+<tr class="separator:a15888d13686aac41aeb8ee85cca78e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4bc0bbd63b4b67f6934bc135f8458e" id="r_aae4bc0bbd63b4b67f6934bc135f8458e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae4bc0bbd63b4b67f6934bc135f8458e">fila_inicio_data</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
+<tr class="memdesc:aae4bc0bbd63b4b67f6934bc135f8458e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o endereço de memória do dado do início da fila.  <br /></td></tr>
+<tr class="separator:aae4bc0bbd63b4b67f6934bc135f8458e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184964edd8a87a14e7a6daf8e2089d8f" id="r_a184964edd8a87a14e7a6daf8e2089d8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a184964edd8a87a14e7a6daf8e2089d8f">fila_fim_data</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
+<tr class="memdesc:a184964edd8a87a14e7a6daf8e2089d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o endereço de memória do dado do fim da fila.  <br /></td></tr>
+<tr class="separator:a184964edd8a87a14e7a6daf8e2089d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Protótipos das funções de um deque. </p>
+</div><h2 class="groupheader">Definições dos tipos</h2>
+<a id="a0f791f085a438fc76b287e0619e3fcbb" name="a0f791f085a438fc76b287e0619e3fcbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f791f085a438fc76b287e0619e3fcbb">&#9670;&#160;</a></span>fila</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct fila fila</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4aeda155dbe167f1c1cf38cb65bf324" name="af4aeda155dbe167f1c1cf38cb65bf324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4aeda155dbe167f1c1cf38cb65bf324">&#9670;&#160;</a></span>node</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct node node</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="a7012e752fb56a30d9cf8f2060b461894" name="a7012e752fb56a30d9cf8f2060b461894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7012e752fb56a30d9cf8f2060b461894">&#9670;&#160;</a></span>fila_destruir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fila_destruir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroi uma fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a184964edd8a87a14e7a6daf8e2089d8f" name="a184964edd8a87a14e7a6daf8e2089d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184964edd8a87a14e7a6daf8e2089d8f">&#9670;&#160;</a></span>fila_fim_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> * fila_fim_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o endereço de memória do dado do fim da fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila</td></tr>
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>ponteiro para o dado do fim, NULL se a fila estiver vazia </dd></dl>
+
+</div>
+</div>
+<a id="ac50e48e199b8edcc68938c91c890062e" name="ac50e48e199b8edcc68938c91c890062e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50e48e199b8edcc68938c91c890062e">&#9670;&#160;</a></span>fila_inicializa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fila_inicializa </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>maxsize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa uma fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+    <tr><td class="paramname">maxsize</td><td>tamanho máximo da fila </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae4bc0bbd63b4b67f6934bc135f8458e" name="aae4bc0bbd63b4b67f6934bc135f8458e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4bc0bbd63b4b67f6934bc135f8458e">&#9670;&#160;</a></span>fila_inicio_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> * fila_inicio_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o endereço de memória do dado do início da fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila</td></tr>
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>ponteiro para o dado do início, NULL se a fila estiver vazia </dd></dl>
+
+</div>
+</div>
+<a id="a7dcda69eefa271b36b321b8bcebbf1af" name="a7dcda69eefa271b36b321b8bcebbf1af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dcda69eefa271b36b321b8bcebbf1af">&#9670;&#160;</a></span>fila_inserir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fila_inserir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um elemento no fim da fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+    <tr><td class="paramname">data</td><td>dado para inserção</td></tr>
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+    <tr><td class="paramname">data</td><td>dado a ser inserido </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se inseriu com sucesso, int 1 caso a fila não exista </dd></dl>
+
+</div>
+</div>
+<a id="a69ab52155998b32e2c226f2f79628b17" name="a69ab52155998b32e2c226f2f79628b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ab52155998b32e2c226f2f79628b17">&#9670;&#160;</a></span>fila_quantidade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned fila_quantidade </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna a quantidade de dados na fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila</td></tr>
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>quantidade de dados na fila </dd></dl>
+
+</div>
+</div>
+<a id="ab468c5345bd01216b5327993e81f6c93" name="ab468c5345bd01216b5327993e81f6c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab468c5345bd01216b5327993e81f6c93">&#9670;&#160;</a></span>fila_remover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fila_remover </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove um elemento do início da fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila</td></tr>
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se removeu com sucesso, int 1 caso a fila esteja vazia </dd></dl>
+
+</div>
+</div>
+<a id="a15888d13686aac41aeb8ee85cca78e55" name="a15888d13686aac41aeb8ee85cca78e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15888d13686aac41aeb8ee85cca78e55">&#9670;&#160;</a></span>fila_vazia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fila_vazia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a fila está vazia. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila</td></tr>
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 1 se a fila estiver vazia, int 0 caso contrário </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html">API</a></li><li class="navelem"><a class="el" href="dir_985fd9c4c08421426710f90bc2726cdb.html">fila</a></li><li class="navelem"><a class="el" href="fila_8h.html">fila.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

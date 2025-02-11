@@ -33,6 +33,22 @@ var menudata={children:[
 {text:"Arquivos",url:"files.html",children:[
 {text:"Lista de Arquivos",url:"files.html"},
 {text:"Membros dos Arquivos",url:"globals.html",children:[
-{text:"Todos",url:"globals.html"},
-{text:"Funções",url:"globals_func.html"},
+{text:"Todos",url:"globals.html",children:[
+{text:"c",url:"globals.html#index_c"},
+{text:"d",url:"globals.html#index_d"},
+{text:"e",url:"globals.html#index_e"},
+{text:"f",url:"globals.html#index_f"},
+{text:"i",url:"globals.html#index_i"},
+{text:"n",url:"globals.html#index_n"},
+{text:"r",url:"globals.html#index_r"},
+{text:"t",url:"globals.html#index_t"},
+{text:"v",url:"globals.html#index_v"}]},
+{text:"Funções",url:"globals_func.html",children:[
+{text:"c",url:"globals_func.html#index_c"},
+{text:"d",url:"globals_func.html#index_d"},
+{text:"e",url:"globals_func.html#index_e"},
+{text:"f",url:"globals_func.html#index_f"},
+{text:"i",url:"globals_func.html#index_i"},
+{text:"r",url:"globals_func.html#index_r"},
+{text:"v",url:"globals_func.html#index_v"}]},
 {text:"Definições de Tipos",url:"globals_type.html"}]}]}]}

@@ -1,37 +1,37 @@
 /**
  * \file deque.h
- * \brief Protótipos das funções de um deque
+ * \brief Protótipos das funções de um deque.
  *
  */
 #ifndef DEQUE_H
 #define DEQUE_H
 
 /**
- * \brief Renomeia o tipo de dado do deque
+ * \brief Renomeia o tipo de dado do deque.
  *
  */
 typedef int T;
 
 /**
  * \struct deque
- * \brief Estrutura de um deque
+ * \brief Estrutura de um deque.
  *
  * A estrutura deque representa uma fila de deque (double-ended queue) que permite inserções e remoções em ambas as extremidades.
  *
  * \var deque::array
- * Array dinâmico que armazena os elementos do deque.
+ * Array dinâmico que armazena os elementos do deque
  *
  * \var deque::max_size
- * Capacidade máxima do deque.
+ * Capacidade máxima do deque
  *
  * \var deque::qtd
- * Quantidade atual de elementos no deque.
+ * Quantidade atual de elementos no deque
  *
  * \var deque::inicio
- * Índice do início do deque.
+ * Índice do início do deque
  *
  * \var deque::fim
- * Índice do fim do deque.
+ * Índice do fim do deque
  */
 typedef struct
 {
@@ -41,70 +41,70 @@ typedef struct
 } deque;
 
 /**
- * \brief Inicializa um deque
+ * \brief Inicializa um deque.
  *
  * \param d ponteiro para o deque
  * \param maxsize tamanho máximo do deque
  */
 int inicializa_deque(deque *d, unsigned maxsize);
 /**
- * \brief Destroi um deque
+ * \brief Destroi um deque.
  *
  * \param d ponteiro para o deque
  */
 int destroi_deque(deque *d);
 /**
- * \brief Verifica se o deque está vazio
+ * \brief Verifica se o deque está vazio.
  *
  * \param d ponteiro para o deque
  */
 int vazia(deque *d);
 /**
- * \brief Verifica se o deque está cheio
+ * \brief Verifica se o deque está cheio.
  *
  * \param d ponteiro para o deque
  */
 int cheia(deque *d);
 /**
- * \brief Insere um elemento no início do deque
+ * \brief Insere um elemento no início do deque.
  *
  * \param d ponteiro para o deque
  * \param data dado a ser inserido
  */
 int insereI(deque *d, T data);
 /**
- * \brief Insere um elemento no fim do deque
+ * \brief Insere um elemento no fim do deque.
  *
  * \param d ponteiro para o deque
  * \param data dado a ser inserido
  */
 int insereF(deque *d, T data);
 /**
- * \brief Remove um elemento do início do deque
+ * \brief Remove um elemento do início do deque.
  *
  * \param d ponteiro para o deque
  */
 int removeI(deque *d);
 /**
- * \brief Remove um elemento do fim do deque
+ * \brief Remove um elemento do fim do deque.
  *
  * \param d ponteiro para o deque
  */
 int removeF(deque *d);
 /**
- * \brief Retorna o elemento do início do deque
+ * \brief Retorna o elemento do início do deque.
  *
  * \param d ponteiro para o deque
  */
 int *elementoI(deque *d);
 /**
- * \brief Retorna o elemento do fim do deque
+ * \brief Retorna o elemento do fim do deque.
  *
  * \param d ponteiro para o deque
  */
 int *elementoF(deque *d);
 /**
- * \brief Imprime o deque do inicio ao fim
+ * \brief Imprime o deque do inicio ao fim.
  *
  * \param d ponteiro para o deque
  */

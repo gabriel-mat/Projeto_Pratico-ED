@@ -1,0 +1,182 @@
+<!-- HTML header for doxygen 1.13.2-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.13.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto Prático de ED: Código-Fonte de /home/arthur/Documents/EstruturaDados/Projeto_Pratico-ED/API/fila/fila.h</title>
+  <link rel="icon" href="vietnam2.png" type="image/x-icon" />
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <script type="text/javascript" src="clipboard.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.title = "Mude entre modo claro ou noturno"
+    DoxygenAwesomeDarkModeToggle.lightModeIcon = '🌞'
+    DoxygenAwesomeDarkModeToggle.darkModeIcon = '🌙'
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo_teste_2_hanoi_tower.jpg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">Projeto Prático de ED<span
+                    id="projectnumber">&#160;v1.1</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- Gerado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('fila_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fila.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="fila_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef FILA_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define FILA_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structnode.html">   30</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structnode.html">node</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structnode.html#acbce71a4d2c50357b61fb77fb0582f50">   32</a></span>    <a class="code hl_typedef" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> <a class="code hl_variable" href="structnode.html#acbce71a4d2c50357b61fb77fb0582f50">data</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structnode.html#aa3e8aa83f864292b5a01210f4453fcc0">   33</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structnode.html">node</a> *<a class="code hl_variable" href="structnode.html#aa3e8aa83f864292b5a01210f4453fcc0">next</a>, *<a class="code hl_variable" href="structnode.html#a92deb3306828ea2e354857923911a5d1">prev</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="fila_8h.html#af4aeda155dbe167f1c1cf38cb65bf324">   34</a></span>} <a class="code hl_struct" href="structnode.html">node</a>;</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structfila.html">   48</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structfila.html">fila</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structfila.html#ab8793a08103ab1b540ead63370b5c172">   50</a></span>    <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="structfila.html#ab8793a08103ab1b540ead63370b5c172">qtd</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structfila.html#ae2404e93d3d1e2e9abb4cb1d2c8e086d">   51</a></span>    <a class="code hl_struct" href="structnode.html">node</a> *<a class="code hl_variable" href="structfila.html#ae2404e93d3d1e2e9abb4cb1d2c8e086d">sentinela</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="fila_8h.html#a0f791f085a438fc76b287e0619e3fcbb">   52</a></span>} <a class="code hl_struct" href="structfila.html">fila</a>;</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">void</span> <a class="code hl_function" href="fila_8h.html#ac50e48e199b8edcc68938c91c890062e">fila_inicializa</a>(<a class="code hl_struct" href="structfila.html">fila</a> *f, <span class="keywordtype">unsigned</span> maxsize);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> <a class="code hl_function" href="fila_8h.html#a7012e752fb56a30d9cf8f2060b461894">fila_destruir</a>(<a class="code hl_struct" href="structfila.html">fila</a> *f);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keywordtype">int</span> <a class="code hl_function" href="fila_8h.html#a7dcda69eefa271b36b321b8bcebbf1af">fila_inserir</a>(<a class="code hl_struct" href="structfila.html">fila</a> *f, <a class="code hl_typedef" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> data);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keywordtype">int</span> <a class="code hl_function" href="fila_8h.html#ab468c5345bd01216b5327993e81f6c93">fila_remover</a>(<a class="code hl_struct" href="structfila.html">fila</a> *f);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">unsigned</span> <a class="code hl_function" href="fila_8h.html#a69ab52155998b32e2c226f2f79628b17">fila_quantidade</a>(<a class="code hl_struct" href="structfila.html">fila</a> *f);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">int</span> <a class="code hl_function" href="fila_8h.html#a15888d13686aac41aeb8ee85cca78e55">fila_vazia</a>(<a class="code hl_struct" href="structfila.html">fila</a> *f);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><a class="code hl_typedef" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> *<a class="code hl_function" href="fila_8h.html#aae4bc0bbd63b4b67f6934bc135f8458e">fila_inicio_data</a>(<a class="code hl_struct" href="structfila.html">fila</a> *f);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><a class="code hl_typedef" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> *<a class="code hl_function" href="fila_8h.html#a184964edd8a87a14e7a6daf8e2089d8f">fila_fim_data</a>(<a class="code hl_struct" href="structfila.html">fila</a> *f);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="adeque_8h_html_a9582e6e8e21f2a935d9f19fc744bc7a4"><div class="ttname"><a href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a></div><div class="ttdeci">int T</div><div class="ttdoc">Renomeia o tipo de dado do deque.</div><div class="ttdef"><b>Definição</b> deque.h:13</div></div>
+<div class="ttc" id="afila_8h_html_a15888d13686aac41aeb8ee85cca78e55"><div class="ttname"><a href="fila_8h.html#a15888d13686aac41aeb8ee85cca78e55">fila_vazia</a></div><div class="ttdeci">int fila_vazia(fila *f)</div><div class="ttdoc">Verifica se a fila está vazia.</div><div class="ttdef"><b>Definição</b> fila.c:103</div></div>
+<div class="ttc" id="afila_8h_html_a184964edd8a87a14e7a6daf8e2089d8f"><div class="ttname"><a href="fila_8h.html#a184964edd8a87a14e7a6daf8e2089d8f">fila_fim_data</a></div><div class="ttdeci">T * fila_fim_data(fila *f)</div><div class="ttdoc">Retorna o endereço de memória do dado do fim da fila.</div><div class="ttdef"><b>Definição</b> fila.c:128</div></div>
+<div class="ttc" id="afila_8h_html_a69ab52155998b32e2c226f2f79628b17"><div class="ttname"><a href="fila_8h.html#a69ab52155998b32e2c226f2f79628b17">fila_quantidade</a></div><div class="ttdeci">unsigned fila_quantidade(fila *f)</div><div class="ttdoc">Retorna a quantidade de dados na fila.</div><div class="ttdef"><b>Definição</b> fila.c:92</div></div>
+<div class="ttc" id="afila_8h_html_a7012e752fb56a30d9cf8f2060b461894"><div class="ttname"><a href="fila_8h.html#a7012e752fb56a30d9cf8f2060b461894">fila_destruir</a></div><div class="ttdeci">void fila_destruir(fila *f)</div><div class="ttdoc">Destroi uma fila.</div><div class="ttdef"><b>Definição</b> fila.c:29</div></div>
+<div class="ttc" id="afila_8h_html_a7dcda69eefa271b36b321b8bcebbf1af"><div class="ttname"><a href="fila_8h.html#a7dcda69eefa271b36b321b8bcebbf1af">fila_inserir</a></div><div class="ttdeci">int fila_inserir(fila *f, T data)</div><div class="ttdoc">Insere um elemento no fim da fila.</div><div class="ttdef"><b>Definição</b> fila.c:45</div></div>
+<div class="ttc" id="afila_8h_html_aae4bc0bbd63b4b67f6934bc135f8458e"><div class="ttname"><a href="fila_8h.html#aae4bc0bbd63b4b67f6934bc135f8458e">fila_inicio_data</a></div><div class="ttdeci">T * fila_inicio_data(fila *f)</div><div class="ttdoc">Retorna o endereço de memória do dado do início da fila.</div><div class="ttdef"><b>Definição</b> fila.c:114</div></div>
+<div class="ttc" id="afila_8h_html_ab468c5345bd01216b5327993e81f6c93"><div class="ttname"><a href="fila_8h.html#ab468c5345bd01216b5327993e81f6c93">fila_remover</a></div><div class="ttdeci">int fila_remover(fila *f)</div><div class="ttdoc">Remove um elemento do início da fila.</div><div class="ttdef"><b>Definição</b> fila.c:69</div></div>
+<div class="ttc" id="afila_8h_html_ac50e48e199b8edcc68938c91c890062e"><div class="ttname"><a href="fila_8h.html#ac50e48e199b8edcc68938c91c890062e">fila_inicializa</a></div><div class="ttdeci">void fila_inicializa(fila *f, unsigned maxsize)</div><div class="ttdoc">Inicializa uma fila.</div><div class="ttdef"><b>Definição</b> fila.c:17</div></div>
+<div class="ttc" id="astructfila_html"><div class="ttname"><a href="structfila.html">fila</a></div><div class="ttdoc">Estrutura de uma fila.</div><div class="ttdef"><b>Definição</b> fila.h:49</div></div>
+<div class="ttc" id="astructfila_html_ab8793a08103ab1b540ead63370b5c172"><div class="ttname"><a href="structfila.html#ab8793a08103ab1b540ead63370b5c172">fila::qtd</a></div><div class="ttdeci">unsigned qtd</div><div class="ttdef"><b>Definição</b> fila.h:50</div></div>
+<div class="ttc" id="astructfila_html_ae2404e93d3d1e2e9abb4cb1d2c8e086d"><div class="ttname"><a href="structfila.html#ae2404e93d3d1e2e9abb4cb1d2c8e086d">fila::sentinela</a></div><div class="ttdeci">node * sentinela</div><div class="ttdef"><b>Definição</b> fila.h:51</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdoc">Estrutura de um nó.</div><div class="ttdef"><b>Definição</b> fila.h:31</div></div>
+<div class="ttc" id="astructnode_html_a92deb3306828ea2e354857923911a5d1"><div class="ttname"><a href="structnode.html#a92deb3306828ea2e354857923911a5d1">node::prev</a></div><div class="ttdeci">struct node * prev</div><div class="ttdef"><b>Definição</b> fila.h:33</div></div>
+<div class="ttc" id="astructnode_html_aa3e8aa83f864292b5a01210f4453fcc0"><div class="ttname"><a href="structnode.html#aa3e8aa83f864292b5a01210f4453fcc0">node::next</a></div><div class="ttdeci">struct node * next</div><div class="ttdef"><b>Definição</b> fila.h:33</div></div>
+<div class="ttc" id="astructnode_html_acbce71a4d2c50357b61fb77fb0582f50"><div class="ttname"><a href="structnode.html#acbce71a4d2c50357b61fb77fb0582f50">node::data</a></div><div class="ttdeci">T data</div><div class="ttdef"><b>Definição</b> fila.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html">API</a></li><li class="navelem"><a class="el" href="dir_985fd9c4c08421426710f90bc2726cdb.html">fila</a></li><li class="navelem"><a class="el" href="fila_8h.html">fila.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

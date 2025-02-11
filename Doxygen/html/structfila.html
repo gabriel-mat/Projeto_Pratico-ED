@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.13.2" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projeto Prático de ED: Membros dos Arquivos</title>
+  <title>Projeto Prático de ED: Referência da Estrutura fila</title>
   <link rel="icon" href="vietnam2.png" type="image/x-icon" />
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
@@ -85,7 +85,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('globals_type.html',''); initResizable(true); });
+$(function(){initNavTree('structfila.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -110,17 +110,69 @@ $(function(){initNavTree('globals_type.html',''); initResizable(true); });
 </div>
 </div>
 
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="structfila-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência da Estrutura fila</div></div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Esta é a list de todas as definições de tipos com links para os arquivos aos quais pertencem:</div><ul>
-<li>fila&#160;:&#160;<a class="el" href="fila_8h.html#a0f791f085a438fc76b287e0619e3fcbb">fila.h</a></li>
-<li>node&#160;:&#160;<a class="el" href="fila_8h.html#af4aeda155dbe167f1c1cf38cb65bf324">fila.h</a></li>
-<li>T&#160;:&#160;<a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">deque.h</a></li>
+
+<p>Estrutura de uma fila.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="fila_8h_source.html">fila.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ab8793a08103ab1b540ead63370b5c172" id="r_ab8793a08103ab1b540ead63370b5c172"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8793a08103ab1b540ead63370b5c172">qtd</a></td></tr>
+<tr class="separator:ab8793a08103ab1b540ead63370b5c172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2404e93d3d1e2e9abb4cb1d2c8e086d" id="r_ae2404e93d3d1e2e9abb4cb1d2c8e086d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnode.html">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2404e93d3d1e2e9abb4cb1d2c8e086d">sentinela</a></td></tr>
+<tr class="separator:ae2404e93d3d1e2e9abb4cb1d2c8e086d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Estrutura de uma fila. </p>
+<p>A estrutura fila representa uma fila que permite remoções no seu início e inserções no seu fim. </p>
+</div><h2 class="groupheader">Atributos</h2>
+<a id="ab8793a08103ab1b540ead63370b5c172" name="ab8793a08103ab1b540ead63370b5c172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8793a08103ab1b540ead63370b5c172">&#9670;&#160;</a></span>qtd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned fila::qtd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Quantidade atual de elementos na fila </p>
+
+</div>
+</div>
+<a id="ae2404e93d3d1e2e9abb4cb1d2c8e086d" name="ae2404e93d3d1e2e9abb4cb1d2c8e086d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2404e93d3d1e2e9abb4cb1d2c8e086d">&#9670;&#160;</a></span>sentinela</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnode.html">node</a>* fila::sentinela</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ponteiro para o nó sentinela da fila </p>
+
+</div>
+</div>
+<hr/>A documentação para essa estrutura foi gerada a partir do seguinte arquivo:<ul>
+<li>/home/arthur/Documents/EstruturaDados/Projeto_Pratico-ED/API/fila/<a class="el" href="fila_8h_source.html">fila.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="structfila.html">fila</a></li>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qtd_0',['qtd',['../structdeque.html#a424c1f055f3595e3e97dd84684799a31',1,'deque']]]
+  ['max_5fsize_0',['max_size',['../structdeque.html#a79e1c28868e63d6c55899d26fa5514f4',1,'deque']]]
 ];

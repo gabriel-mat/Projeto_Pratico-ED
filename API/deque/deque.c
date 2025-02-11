@@ -2,7 +2,6 @@
  * \file deque.c
  * \authors André, Arthur, Gabriel e Otávio
  * \brief Implementação de um deque
- * \version 0.1
  *
  * \details Este arquivo contém a implementação das funções de um deque.
  */
@@ -11,7 +10,7 @@
 #include <stdio.h>
 
 /**
- * \brief Inicializa um deque
+ * \brief Inicializa um deque.
  *
  * \param d ponteiro para o deque
  * \param maxsize tamanho máximo do deque
@@ -32,7 +31,7 @@ int inicializa_deque(deque *d, unsigned maxsize)
 }
 
 /**
- * \brief Destroi um deque
+ * \brief Destroi um deque.
  *
  * \param d ponteiro para o deque
  * \return int 0 se destruiu com sucesso, 1 caso contrário
@@ -48,7 +47,7 @@ int destroi_deque(deque *d)
 }
 
 /**
- * \brief Verifica se o deque está vazio
+ * \brief Verifica se o deque está vazio.
  *
  * \param d ponteiro para o deque
  * \return int 1 se vazio, 0 caso contrário
@@ -56,7 +55,7 @@ int destroi_deque(deque *d)
 int vazia(deque *d) { return (d->qtd == 0); }
 
 /**
- * \brief Verifica se o deque está cheio
+ * \brief Verifica se o deque está cheio.
  *
  * \param d ponteiro para o deque
  * \return int 1 se cheio, 0 caso contrário
@@ -64,7 +63,7 @@ int vazia(deque *d) { return (d->qtd == 0); }
 int cheia(deque *d) { return (d->qtd == d->max_size); }
 
 /**
- * \brief Insere um elemento no início do deque
+ * \brief Insere um elemento no início do deque.
  *
  * \param d ponteiro para o deque
  * \param data elemento a ser inserido
@@ -82,7 +81,7 @@ int insereI(deque *d, T data)
 }
 
 /**
- * \brief Insere um elemento no fim do deque
+ * \brief Insere um elemento no fim do deque.
  *
  * \param d ponteiro para o deque
  * \param data elemento a ser inserido
@@ -100,7 +99,7 @@ int insereF(deque *d, T data)
 }
 
 /**
- * \brief Remove um elemento do início do deque
+ * \brief Remove um elemento do início do deque.
  *
  * \param d ponteiro para o deque
  * \return int 0 se removeu com sucesso, 1 caso contrário
@@ -116,7 +115,7 @@ int removeI(deque *d)
 }
 
 /**
- * \brief Remove um elemento do fim do deque
+ * \brief Remove um elemento do fim do deque.
  *
  * \param d ponteiro para o deque
  * \return int 0 se removeu com sucesso, 1 caso contrário
@@ -132,7 +131,7 @@ int removeF(deque *d)
 }
 
 /**
- * \brief Retorna o elemento do início do deque
+ * \brief Retorna o elemento do início do deque.
  *
  * \param d ponteiro para o deque
  * \return int* ponteiro para o elemento do início, NULL se vazio
@@ -145,7 +144,7 @@ int *elementoI(deque *d)
 }
 
 /**
- * \brief Retorna o elemento do fim do deque
+ * \brief Retorna o elemento do fim do deque.
  *
  * \param d ponteiro para o deque
  * \return int* ponteiro para o elemento do fim, NULL se vazio
@@ -158,11 +157,12 @@ int *elementoF(deque *d)
 }
 
 /**
- * \brief Imprime o deque do inicio ao fim
+ * \brief Imprime o deque do inicio ao fim.
  *
  * \param d ponteiro para o deque
  */
-void imprime_deque(deque *d){
-    for(int i = 0; i < d->qtd; i++)
-      printf("%d ", d->array[(d->inicio + i + 1 + d->max_size) % d->max_size]);
+void imprime_deque(deque *d)
+{
+  for (int i = 0; i < d->qtd; i++)
+    printf("%d ", d->array[(d->inicio + i + 1 + d->max_size) % d->max_size]);
 }
