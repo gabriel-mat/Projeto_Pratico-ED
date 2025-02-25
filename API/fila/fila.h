@@ -1,6 +1,6 @@
 /**
  * \file fila.h
- * \brief Protótipos das funções de um deque.
+ * \brief Protótipos das funções de uma fila.
  *
  */
 #ifndef FILA_H
