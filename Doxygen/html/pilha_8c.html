@@ -1,0 +1,406 @@
+<!-- HTML header for doxygen 1.13.2-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.13.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto Prático de ED: Referência do Arquivo /home/gabriel/Desktop/BCC/ED/proj/API/pilha/pilha.c</title>
+  <link rel="icon" href="vietnam2.png" type="image/x-icon" />
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <script type="text/javascript" src="clipboard.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.title = "Mude entre modo claro ou noturno"
+    DoxygenAwesomeDarkModeToggle.lightModeIcon = '🌞'
+    DoxygenAwesomeDarkModeToggle.darkModeIcon = '🌙'
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="logo_teste_2_hanoi_tower.jpg"  /></td>
+              <td id="projectalign">
+                <div id="projectname">Projeto Prático de ED<span
+                    id="projectnumber">&#160;v1.1</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part -->
+<!-- Gerado por Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('pilha_8c.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo pilha.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementação de uma pilha.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="pilha_8h_source.html">pilha.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a0592dba56693fad79136250c11e5a7fe" id="r_a0592dba56693fad79136250c11e5a7fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0592dba56693fad79136250c11e5a7fe">MAX_SIZE</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a0592dba56693fad79136250c11e5a7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a1921d98f98152f1aa004b254f9098de0" id="r_a1921d98f98152f1aa004b254f9098de0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1921d98f98152f1aa004b254f9098de0">pilha_inicializa</a> (<a class="el" href="structpilha.html">pilha</a> *p)</td></tr>
+<tr class="memdesc:a1921d98f98152f1aa004b254f9098de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma pilha.  <br /></td></tr>
+<tr class="separator:a1921d98f98152f1aa004b254f9098de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32088f5ef220c3dc449e02d9bf258239" id="r_a32088f5ef220c3dc449e02d9bf258239"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32088f5ef220c3dc449e02d9bf258239">pilha_destruir</a> (<a class="el" href="structpilha.html">pilha</a> *p)</td></tr>
+<tr class="memdesc:a32088f5ef220c3dc449e02d9bf258239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroi uma pilha.  <br /></td></tr>
+<tr class="separator:a32088f5ef220c3dc449e02d9bf258239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737a7975e64b5ebd5e7b0847ce639a4d" id="r_a737a7975e64b5ebd5e7b0847ce639a4d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a737a7975e64b5ebd5e7b0847ce639a4d">pilha_vazia</a> (<a class="el" href="structpilha.html">pilha</a> *p)</td></tr>
+<tr class="memdesc:a737a7975e64b5ebd5e7b0847ce639a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a pilha está vazia.  <br /></td></tr>
+<tr class="separator:a737a7975e64b5ebd5e7b0847ce639a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ebb8923d404d0114197094afb4b8c4" id="r_ae9ebb8923d404d0114197094afb4b8c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9ebb8923d404d0114197094afb4b8c4">pilha_cheia</a> (<a class="el" href="structpilha.html">pilha</a> *p)</td></tr>
+<tr class="memdesc:ae9ebb8923d404d0114197094afb4b8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a pilha está cheia.  <br /></td></tr>
+<tr class="separator:ae9ebb8923d404d0114197094afb4b8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e78edcec75d2a88bf2fd3b388902825" id="r_a3e78edcec75d2a88bf2fd3b388902825"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e78edcec75d2a88bf2fd3b388902825">pilha_inserir</a> (<a class="el" href="structpilha.html">pilha</a> *p, <a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> data)</td></tr>
+<tr class="memdesc:a3e78edcec75d2a88bf2fd3b388902825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um elemento no topo da pilha.  <br /></td></tr>
+<tr class="separator:a3e78edcec75d2a88bf2fd3b388902825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78865c6fea3cbf27125b40f7e6345dbf" id="r_a78865c6fea3cbf27125b40f7e6345dbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78865c6fea3cbf27125b40f7e6345dbf">pilha_remover</a> (<a class="el" href="structpilha.html">pilha</a> *p)</td></tr>
+<tr class="memdesc:a78865c6fea3cbf27125b40f7e6345dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove um elemento do topo da pilha.  <br /></td></tr>
+<tr class="separator:a78865c6fea3cbf27125b40f7e6345dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab627d69c150e94f1b482204c01e30766" id="r_ab627d69c150e94f1b482204c01e30766"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab627d69c150e94f1b482204c01e30766">pilha_topo</a> (<a class="el" href="structpilha.html">pilha</a> *p)</td></tr>
+<tr class="memdesc:ab627d69c150e94f1b482204c01e30766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o elemento armazenado do topo da pilha.  <br /></td></tr>
+<tr class="separator:ab627d69c150e94f1b482204c01e30766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973e87db43aaf666601153501c5e6159" id="r_a973e87db43aaf666601153501c5e6159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a973e87db43aaf666601153501c5e6159">pilha_imprimir</a> (<a class="el" href="structpilha.html">pilha</a> *p)</td></tr>
+<tr class="memdesc:a973e87db43aaf666601153501c5e6159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime a pilha do topo à base.  <br /></td></tr>
+<tr class="separator:a973e87db43aaf666601153501c5e6159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Implementação de uma pilha. </p>
+<dl class="section author"><dt>Autores</dt><dd>André, Arthur, Gabriel e Otávio </dd></dl>
+<p>Este arquivo contém a implementação das funções de uma pilha. </p>
+</div><h2 class="groupheader">Definições e macros</h2>
+<a id="a0592dba56693fad79136250c11e5a7fe" name="a0592dba56693fad79136250c11e5a7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0592dba56693fad79136250c11e5a7fe">&#9670;&#160;</a></span>MAX_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_SIZE&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="ae9ebb8923d404d0114197094afb4b8c4" name="ae9ebb8923d404d0114197094afb4b8c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ebb8923d404d0114197094afb4b8c4">&#9670;&#160;</a></span>pilha_cheia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pilha_cheia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a pilha está cheia. </p>
+<p>Verifica se a pilha atingiu a quantidade máxima de elementos.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 1 se cheia, 0 caso contrário </dd></dl>
+
+</div>
+</div>
+<a id="a32088f5ef220c3dc449e02d9bf258239" name="a32088f5ef220c3dc449e02d9bf258239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32088f5ef220c3dc449e02d9bf258239">&#9670;&#160;</a></span>pilha_destruir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pilha_destruir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroi uma pilha. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se destruiu com sucesso, 1 caso contrário </dd></dl>
+
+</div>
+</div>
+<a id="a973e87db43aaf666601153501c5e6159" name="a973e87db43aaf666601153501c5e6159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a973e87db43aaf666601153501c5e6159">&#9670;&#160;</a></span>pilha_imprimir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pilha_imprimir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime a pilha do topo à base. </p>
+<p>Imprime a pilha desde o topo até a base.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1921d98f98152f1aa004b254f9098de0" name="a1921d98f98152f1aa004b254f9098de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1921d98f98152f1aa004b254f9098de0">&#9670;&#160;</a></span>pilha_inicializa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pilha_inicializa </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa uma pilha. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se inicializou com sucesso, 1 caso contrário </dd></dl>
+
+</div>
+</div>
+<a id="a3e78edcec75d2a88bf2fd3b388902825" name="a3e78edcec75d2a88bf2fd3b388902825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e78edcec75d2a88bf2fd3b388902825">&#9670;&#160;</a></span>pilha_inserir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pilha_inserir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um elemento no topo da pilha. </p>
+<p>Insere um elemento na pilha.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+    <tr><td class="paramname">data</td><td>elemento a ser inserido </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se inseriu com sucesso, 1 caso contrário </dd></dl>
+
+</div>
+</div>
+<a id="a78865c6fea3cbf27125b40f7e6345dbf" name="a78865c6fea3cbf27125b40f7e6345dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78865c6fea3cbf27125b40f7e6345dbf">&#9670;&#160;</a></span>pilha_remover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pilha_remover </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove um elemento do topo da pilha. </p>
+<p>Remove um elemento na pilha.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se removeu com sucesso, 1 caso contrário </dd></dl>
+
+</div>
+</div>
+<a id="ab627d69c150e94f1b482204c01e30766" name="ab627d69c150e94f1b482204c01e30766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab627d69c150e94f1b482204c01e30766">&#9670;&#160;</a></span>pilha_topo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * pilha_topo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o elemento armazenado do topo da pilha. </p>
+<p>Retorna um ponteiro para o dado do elemento no topo da pilha.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int* ponteiro para o elemento do início, NULL se vazio </dd></dl>
+
+</div>
+</div>
+<a id="a737a7975e64b5ebd5e7b0847ce639a4d" name="a737a7975e64b5ebd5e7b0847ce639a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737a7975e64b5ebd5e7b0847ce639a4d">&#9670;&#160;</a></span>pilha_vazia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pilha_vazia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a pilha está vazia. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 1 se vazia, 0 caso contrário </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html">API</a></li><li class="navelem"><a class="el" href="dir_f33bde8150fe6908188270ed202a711a.html">pilha</a></li><li class="navelem"><a class="el" href="pilha_8c.html">pilha.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
