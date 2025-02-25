@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.13.2" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projeto Prático de ED: Referência do Arquivo /home/gabriel/Desktop/BCC/ED/proj/API/deque/deque.h</title>
+  <title>Projeto Prático de ED: Referência do Arquivo /home/gabriel/Desktop/BCC/ED/proj/API/deque/deque.c</title>
   <link rel="icon" href="vietnam2.png" type="image/x-icon" />
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
@@ -85,7 +85,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('deque_8h.html',''); initResizable(true); });
+$(function(){initNavTree('deque_2deque_8c.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -112,30 +112,14 @@ $(function(){initNavTree('deque_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Componentes</a> &#124;
-<a href="#typedef-members">Definições de Tipos</a> &#124;
 <a href="#func-members">Funções</a>  </div>
-  <div class="headertitle"><div class="title">Referência do Arquivo deque.h</div></div>
+  <div class="headertitle"><div class="title">Referência do Arquivo deque.c</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Protótipos das funções de um deque.  
-<a href="#details">Mais...</a></p>
-
-<p><a href="deque_8h_source.html">Ir para o código-fonte desse arquivo.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Componentes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdeque.html">deque</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura de um deque.  <a href="structdeque.html#details">Mais...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Definições de Tipos</h2></td></tr>
-<tr class="memitem:a9582e6e8e21f2a935d9f19fc744bc7a4" id="r_a9582e6e8e21f2a935d9f19fc744bc7a4"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a></td></tr>
-<tr class="memdesc:a9582e6e8e21f2a935d9f19fc744bc7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renomeia o tipo de dado do deque.  <br /></td></tr>
-<tr class="separator:a9582e6e8e21f2a935d9f19fc744bc7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="deque_8h_source.html">deque.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funções</h2></td></tr>
 <tr class="memitem:adc8a8737615223e126579d9a78ecde25" id="r_adc8a8737615223e126579d9a78ecde25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc8a8737615223e126579d9a78ecde25">inicializa_deque</a> (<a class="el" href="structdeque.html">deque</a> *d, unsigned maxsize)</td></tr>
@@ -150,10 +134,10 @@ Funções</h2></td></tr>
 <tr class="memitem:a16271b86a640899d506e407df965ece1" id="r_a16271b86a640899d506e407df965ece1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16271b86a640899d506e407df965ece1">cheia</a> (<a class="el" href="structdeque.html">deque</a> *d)</td></tr>
 <tr class="memdesc:a16271b86a640899d506e407df965ece1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o deque está cheio.  <br /></td></tr>
 <tr class="separator:a16271b86a640899d506e407df965ece1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae644a0ccec51f953128ea17a096442bd" id="r_ae644a0ccec51f953128ea17a096442bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae644a0ccec51f953128ea17a096442bd">insereI</a> (<a class="el" href="structdeque.html">deque</a> *d, <a class="el" href="#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> data)</td></tr>
+<tr class="memitem:ae644a0ccec51f953128ea17a096442bd" id="r_ae644a0ccec51f953128ea17a096442bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae644a0ccec51f953128ea17a096442bd">insereI</a> (<a class="el" href="structdeque.html">deque</a> *d, <a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> data)</td></tr>
 <tr class="memdesc:ae644a0ccec51f953128ea17a096442bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um elemento no início do deque.  <br /></td></tr>
 <tr class="separator:ae644a0ccec51f953128ea17a096442bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71787307444487fcfa1ccc8cebd606ca" id="r_a71787307444487fcfa1ccc8cebd606ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71787307444487fcfa1ccc8cebd606ca">insereF</a> (<a class="el" href="structdeque.html">deque</a> *d, <a class="el" href="#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> data)</td></tr>
+<tr class="memitem:a71787307444487fcfa1ccc8cebd606ca" id="r_a71787307444487fcfa1ccc8cebd606ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71787307444487fcfa1ccc8cebd606ca">insereF</a> (<a class="el" href="structdeque.html">deque</a> *d, <a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> data)</td></tr>
 <tr class="memdesc:a71787307444487fcfa1ccc8cebd606ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um elemento no fim do deque.  <br /></td></tr>
 <tr class="separator:a71787307444487fcfa1ccc8cebd606ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a375c6992c8d464e9a98ae1de1b077f4a" id="r_a375c6992c8d464e9a98ae1de1b077f4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a375c6992c8d464e9a98ae1de1b077f4a">removeI</a> (<a class="el" href="structdeque.html">deque</a> *d)</td></tr>
@@ -172,27 +156,6 @@ Funções</h2></td></tr>
 <tr class="memdesc:a8dd66d16cd718b215ac3a2d241d3cb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime o deque do inicio ao fim.  <br /></td></tr>
 <tr class="separator:a8dd66d16cd718b215ac3a2d241d3cb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<div class="textblock"><p>Protótipos das funções de um deque. </p>
-</div><h2 class="groupheader">Definições dos tipos</h2>
-<a id="a9582e6e8e21f2a935d9f19fc744bc7a4" name="a9582e6e8e21f2a935d9f19fc744bc7a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9582e6e8e21f2a935d9f19fc744bc7a4">&#9670;&#160;</a></span>T</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef int <a class="el" href="#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Renomeia o tipo de dado do deque. </p>
-<p>Renomeia o tipo de dado da pilha.</p>
-<p>Renomeia o tipo de dado da fila. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Funções</h2>
 <a id="a16271b86a640899d506e407df965ece1" name="a16271b86a640899d506e407df965ece1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16271b86a640899d506e407df965ece1">&#9670;&#160;</a></span>cheia()</h2>
@@ -212,7 +175,6 @@ Funções</h2></td></tr>
 <p>Verifica se o deque está cheio. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>ponteiro para o deque</td></tr>
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
   </table>
   </dd>
@@ -239,7 +201,6 @@ Funções</h2></td></tr>
 <p>Destroi um deque. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>ponteiro para o deque</td></tr>
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
   </table>
   </dd>
@@ -266,7 +227,6 @@ Funções</h2></td></tr>
 <p>Retorna o elemento do fim do deque. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>ponteiro para o deque</td></tr>
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
   </table>
   </dd>
@@ -293,7 +253,6 @@ Funções</h2></td></tr>
 <p>Retorna o elemento do início do deque. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>ponteiro para o deque</td></tr>
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
   </table>
   </dd>
@@ -350,8 +309,6 @@ Funções</h2></td></tr>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
-    <tr><td class="paramname">maxsize</td><td>tamanho máximo do deque</td></tr>
-    <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
     <tr><td class="paramname">maxsize</td><td>tamanho máximo do deque </td></tr>
   </table>
   </dd>
@@ -374,7 +331,7 @@ Funções</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -382,8 +339,6 @@ Funções</h2></td></tr>
 <p>Insere um elemento no fim do deque. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
-    <tr><td class="paramname">data</td><td>dado a ser inserido</td></tr>
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
     <tr><td class="paramname">data</td><td>elemento a ser inserido </td></tr>
   </table>
@@ -407,7 +362,7 @@ Funções</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -415,8 +370,6 @@ Funções</h2></td></tr>
 <p>Insere um elemento no início do deque. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
-    <tr><td class="paramname">data</td><td>dado a ser inserido</td></tr>
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
     <tr><td class="paramname">data</td><td>elemento a ser inserido </td></tr>
   </table>
@@ -444,7 +397,6 @@ Funções</h2></td></tr>
 <p>Remove um elemento do fim do deque. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>ponteiro para o deque</td></tr>
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
   </table>
   </dd>
@@ -471,7 +423,6 @@ Funções</h2></td></tr>
 <p>Remove um elemento do início do deque. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>ponteiro para o deque</td></tr>
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
   </table>
   </dd>
@@ -498,7 +449,6 @@ Funções</h2></td></tr>
 <p>Verifica se o deque está vazio. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">d</td><td>ponteiro para o deque</td></tr>
     <tr><td class="paramname">d</td><td>ponteiro para o deque </td></tr>
   </table>
   </dd>
@@ -512,7 +462,7 @@ Funções</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html">API</a></li><li class="navelem"><a class="el" href="dir_9a9fbcd668bd340ed90907a7abd69a9f.html">deque</a></li><li class="navelem"><a class="el" href="deque_8h.html">deque.h</a></li>
+    <li class="navelem"><a class="el" href="dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html">API</a></li><li class="navelem"><a class="el" href="dir_9a9fbcd668bd340ed90907a7abd69a9f.html">deque</a></li><li class="navelem"><a class="el" href="deque_2deque_8c.html">deque.c</a></li>
     <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

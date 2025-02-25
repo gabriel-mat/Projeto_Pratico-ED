@@ -1,12 +1,13 @@
 var indexSectionsWithContent =
 {
   0: "acdefimnpqrstv🗼",
-  1: "dfn",
-  2: "dfr",
-  3: "cdefirv",
+  1: "dfnp",
+  2: "dfpr",
+  3: "cdefiprv",
   4: "adfimnpqs",
   5: "fnt",
-  6: "dep🗼"
+  6: "m",
+  7: "dep🗼"
 };
 
 var indexSectionNames =
@@ -17,7 +18,8 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "typedefs",
-  6: "pages"
+  6: "defines",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -28,6 +30,7 @@ var indexSectionLabels =
   3: "Funções",
   4: "Variáveis",
   5: "Definições de Tipos",
-  6: "Páginas"
+  6: "Definições e Macros",
+  7: "Páginas"
 };
 

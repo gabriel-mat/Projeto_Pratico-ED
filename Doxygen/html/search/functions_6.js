@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vazia_0',['vazia',['../deque_8c.html#a107733e3528f0030b9ac26ddfe653a65',1,'vazia(deque *d):&#160;deque.c'],['../deque_8h.html#a107733e3528f0030b9ac26ddfe653a65',1,'vazia(deque *d):&#160;deque.c']]]
+  ['removef_0',['removeF',['../deque_2deque_8c.html#a2a9da9992e7e04e24f60f9da71aab1d4',1,'removeF(deque *d):&#160;deque.c'],['../deque_8h.html#a2a9da9992e7e04e24f60f9da71aab1d4',1,'removeF(deque *d):&#160;deque.c']]],
+  ['removei_1',['removeI',['../deque_2deque_8c.html#a375c6992c8d464e9a98ae1de1b077f4a',1,'removeI(deque *d):&#160;deque.c'],['../deque_8h.html#a375c6992c8d464e9a98ae1de1b077f4a',1,'removeI(deque *d):&#160;deque.c']]]
 ];

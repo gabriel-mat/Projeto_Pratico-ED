@@ -11,5 +11,5 @@ var searchData=
   ['fila_5fquantidade_8',['fila_quantidade',['../fila_8c.html#a69ab52155998b32e2c226f2f79628b17',1,'fila_quantidade(fila *f):&#160;fila.c'],['../fila_8h.html#a69ab52155998b32e2c226f2f79628b17',1,'fila_quantidade(fila *f):&#160;fila.c']]],
   ['fila_5fremover_9',['fila_remover',['../fila_8c.html#ab468c5345bd01216b5327993e81f6c93',1,'fila_remover(fila *f):&#160;fila.c'],['../fila_8h.html#ab468c5345bd01216b5327993e81f6c93',1,'fila_remover(fila *f):&#160;fila.c']]],
   ['fila_5fvazia_10',['fila_vazia',['../fila_8c.html#a15888d13686aac41aeb8ee85cca78e55',1,'fila_vazia(fila *f):&#160;fila.c'],['../fila_8h.html#a15888d13686aac41aeb8ee85cca78e55',1,'fila_vazia(fila *f):&#160;fila.c']]],
-  ['fim_11',['fim',['../structdeque.html#a521aaf51846b297901c94c6db3de07a2',1,'deque']]]
+  ['fim_11',['fim',['../structdeque.html#a521aaf51846b297901c94c6db3de07a2',1,'deque::fim'],['../structpilha.html#a3681e9ca10fcf39f492f2ad70d7b3b56',1,'pilha::fim']]]
 ];

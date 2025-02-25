@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tam_5fmax_5fdeque_0',['TAM_MAX_DEQUE',['../deque_8h.html#a2acd4f52b3cd0f8e52a289de55c12df8',1,'deque.h']]]
+  ['max_5fsize_0',['MAX_SIZE',['../pilha_2deque_8c.html#a0592dba56693fad79136250c11e5a7fe',1,'deque.c']]]
 ];
