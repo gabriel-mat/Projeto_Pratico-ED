@@ -1,51 +1,32 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 #include "../API/fila/fila.h"
 #include "../API/deque/deque.h"
 
-int traduzircomandomenu(char comando[])
-{
-    if (strcmp(comando, "iniciar") == 0)
-    {
-        return 0;
-    }
-    else if (strcmp(comando, "comojogar") == 0)
-    {
-        return 1;
-    }
-    else if (strcmp(comando, "regras") == 0)
-    {
-        return 2;
-    }
-    else
-    {
-        return -1;
-    }
-}
+// Protótipos de funções e procedimentos
+
+void imprimir_menu();
+
+// == == == == == == == == == == == == == == ==
 
 int main()
 {
-    printf("Digite um comando (iniciar, comojogar, regras): ");
+    int codigo;
 
-    char comando[10];
-    scanf("%s", comando);
-
-    int codigo = traduzircomandomenu(comando);
-
-    switch (codigo)
-    {
-    case 0:
-        printf("iniciar\n");
-        break;
-    case 1:
-        printf("comojogar\n");
-        break;
-    case 2:
-        printf("regras\n");
-        break;
-    default:
-        printf("COMANDO INVALIDO\n");
-    }
+    // Exibindo o menu
+    imprimir_menu();
 
     return 0;
+}
+
+void imprimir_menu()
+{
+// Limpando o terminal de acordo com cada OS
+#ifdef __unix__
+    system("clear");
+#else
+    system("cls");
+#endif
+
+    printf("* MENU *\n");
 }
