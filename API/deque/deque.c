@@ -1,7 +1,7 @@
 /**
- * \file deque.c
+ * \file pilha.c
  * \authors André, Arthur, Gabriel e Otávio
- * \brief Implementação de um deque
+ * \brief Implementação de uma pilha
  *
  * \details Este arquivo contém a implementação das funções de um deque.
  */

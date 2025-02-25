@@ -4,6 +4,8 @@
 #include "../API/fila/fila.h"
 #include "../API/deque/deque.h"
 
+#define NUM_FASES 5
+
 // Protótipos de funções e procedimentos
 
 void menu();
@@ -12,8 +14,6 @@ void como_jogar();
 void regras();
 
 void limpar_tela();
-
-// == == == == == == == == == == == == == == ==
 
 int main()
 {
@@ -65,7 +65,11 @@ void menu()
     } while (!opt);
 }
 
-void iniciar() {}
+void iniciar()
+{
+    limpar_tela();
+}
+
 void como_jogar() {}
 void regras() {}
 
