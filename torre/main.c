@@ -88,7 +88,40 @@ void iniciar()
 }
 
 void como_jogar() {}
-void regras() {}
+
+void regras() 
+{
+
+
+    int opt;
+    do
+    {
+
+        limpar_tela();
+
+        printf("REGRAS:\n\n");
+        printf("O quebra-cabeca consiste em uma base com tres pinos, onde varios discos sao empilhados em um deles,\n");
+        printf("organizados em ordem crescente de diametro, do menor no topo ao maior na base.\n");
+        printf("O desafio e transferir todos os discos para outro pino, utilizando o terceiro como auxiliar,\n");
+        printf("seguindo tres regras fundamentais:\n\n");
+        printf("1. Apenas um disco pode ser movido por vez.\n");
+        printf("2. Nenhum disco maior pode ficar sobre um menor em nenhum momento.\n");
+        printf("3. Ha um numero limitado de movimentos para concluir o desafio.\n\n");
+        printf("A solucao exige planejamento estrategico e raciocinio logico para garantir");
+        printf("que todos os discos sejam movidos corretamente dentro do limite de jogadas. Boa sorte!\n\n");
+
+        printf("Digite um numero para voltar ao menu: ");
+        scanf("%d", &opt);
+
+        switch (opt)
+        {
+        default:
+            menu();
+            break;
+        }
+    } while (!opt);
+
+}
 
 void msg_max_movs()
 {
