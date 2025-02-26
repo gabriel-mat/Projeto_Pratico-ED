@@ -107,7 +107,7 @@ void regras()
         printf("1. Apenas um disco pode ser movido por vez.\n");
         printf("2. Nenhum disco maior pode ficar sobre um menor em nenhum momento.\n");
         printf("3. Ha um numero limitado de movimentos para concluir o desafio.\n\n");
-        printf("A solucao exige planejamento estrategico e raciocinio logico para garantir");
+        printf("A solucao exige planejamento estrategico e raciocinio logico para garantir\n");
         printf("que todos os discos sejam movidos corretamente dentro do limite de jogadas. Boa sorte!\n\n");
 
         printf("Digite um numero para voltar ao menu: ");
