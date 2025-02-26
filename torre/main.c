@@ -94,12 +94,11 @@ void como_jogar()
     printf("\tCOMO JOGAR\n");
     printf("\t\tO jogo consiste em 5 fases em ordem crescente de dificuldade, cada fase 'n' possui 'n' discos na torre inicial;\n");
     printf("\t\tAs 3 torres sao denomidadas A, B e C; respectivamente, da esquerda para a direita;\n");
-    printf("\t\tSeu objetivo e mover os discos da torre inicial (A) para outra torre (B ou C);\n");
     printf("\t\tA cada nova fase com 'n' discos, o minimo de movimentos necessarios e calculado (2^n - 1);\n");
-    printf("\t\tUsar mais que o minimo de movimentos reiniciara seu progresso na fase atual, seu objetivo e resolver a ultima fase;\n");
+    printf("\t\tUsar mais que o minimo de movimentos reiniciara seu progresso na fase atual!\n");
 
     printf("\n\tCOMANDOS\n");
-    printf("\t\tmv X Y, move o disco do topo de X para o topo de Y;\n");
+    printf("\t\tmv X Y, move o disco do topo de X para o topo de Y, use a notacao 'A', 'B' e 'C';\n");
 
     printf("\nLembre-se de considerar as regras do jogo, boa sorte!");
 
