@@ -16,6 +16,7 @@ void iniciar();
 void como_jogar();
 void regras();
 void msg_max_movs();
+void limpar_buffer();
 int jogar_fase(int num);
 pilha criar_torre(int num);
 
@@ -66,7 +67,7 @@ void menu()
         default:
             opt = 0;
             printf("Comando invalido! Tente novamente.");
-            scanf("%*c");
+            limpar_buffer();
             getchar();
             break;
         }
@@ -100,31 +101,29 @@ void como_jogar()
     printf("\t\tUsar mais que o minimo de movimentos reiniciara seu progresso na fase atual!\n");
 
     printf("\n\tCOMANDOS\n");
-    printf("\t\tmv X Y, move o disco do topo de X para o topo de Y, use a notacao 'A', 'B' e 'C';\n");
+    printf("\t\tmv X Y\t|  move o disco do topo de X para o topo de Y;\n");
 
-    printf("\nLembre-se de considerar as regras do jogo, boa sorte!");
+    printf("\nLembre-se de considerar as regras do jogo e usar a notacao 'A', 'B' e 'C'\npressionte enter");
 
-    scanf("%*c");
+    limpar_buffer();
     getchar();
-    limpar_tela();
 }
 
 void regras()
 {
     limpar_tela();
 
-    printf("REGRAS:\n\n");
-    printf("O quebra-cabeca consiste em uma base com tres pinos, onde varios discos sao empilhados em um deles,\n");
-    printf("organizados em ordem crescente de diametro, do menor no topo ao maior na base.\n");
-    printf("O desafio e transferir todos os discos para outro pino, utilizando o terceiro como auxiliar,\n");
-    printf("seguindo tres regras fundamentais:\n\n");
-    printf("1. Apenas um disco pode ser movido por vez.\n");
-    printf("2. Nenhum disco maior pode ficar sobre um menor em nenhum momento.\n");
-    printf("3. Ha um numero limitado de movimentos para concluir o desafio.\n\n");
-    printf("A solucao exige planejamento estrategico e raciocinio logico para garantir\n");
-    printf("que todos os discos sejam movidos corretamente dentro do limite de jogadas. Boa sorte!\n\n");
+    printf("\tREGRAS:\n");
+    printf("\t\t  O quebra-cabeca consiste em uma base com tres pinos, onde varios discos sao empilhados em um deles,\n");
+    printf("\t\torganizados em ordem crescente de diametro, do menor no topo ao maior na base.\n");
+    printf("\t\t  O desafio e transferir todos os discos para outro pino, seguindo duas regras fundamentais:\n\n");
 
-    scanf("%*c");
+    printf("\t\t1. Apenas um disco pode ser movido por vez.\n");
+    printf("\t\t2. Nenhum disco maior pode ficar sobre um menor em nenhum momento.\n\n");
+    printf("\t\t  A solucao exige planejamento estrategico e raciocinio logico para garantir\n");
+    printf("\t\tque todos os discos sejam movidos corretamente dentro do limite de jogadas.\npressione enter");
+
+    limpar_buffer();
     getchar();
 }
 
@@ -134,7 +133,7 @@ void msg_max_movs()
 
     printf("\tGAME OVER\n");
     printf("\tNumero maximo de movimentos atingido, tente novamente!");
-    scanf("%*c");
+    limpar_buffer();
     getchar();
 }
 
@@ -156,6 +155,12 @@ int jogar_fase(int num)
     }
 
     return 1;
+}
+
+void limpar_buffer()
+{
+    while (getchar() != '\n')
+        ;
 }
 
 pilha criar_torre(int num)
