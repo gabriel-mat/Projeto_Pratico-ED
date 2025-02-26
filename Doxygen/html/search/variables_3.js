@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inicio_0',['inicio',['../structdeque.html#a64f06fe1b653852ac55bf4b0b97a293b',1,'deque::inicio'],['../structpilha.html#a494295b3cec7c6504537a81640de072a',1,'pilha::inicio']]]
+  ['fim_0',['fim',['../structdeque.html#a521aaf51846b297901c94c6db3de07a2',1,'deque::fim'],['../structpilha.html#a3681e9ca10fcf39f492f2ad70d7b3b56',1,'pilha::fim']]]
 ];

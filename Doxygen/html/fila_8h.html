@@ -132,6 +132,9 @@ Componentes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfila.html">fila</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura de uma fila.  <a href="structfila.html#details">Mais...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structiterador.html">iterador</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura de um iterador.  <a href="structiterador.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Definições de Tipos</h2></td></tr>
@@ -139,6 +142,8 @@ Definições de Tipos</h2></td></tr>
 <tr class="separator:af4aeda155dbe167f1c1cf38cb65bf324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f791f085a438fc76b287e0619e3fcbb" id="r_a0f791f085a438fc76b287e0619e3fcbb"><td class="memItemLeft" align="right" valign="top">typedef struct fila&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f791f085a438fc76b287e0619e3fcbb">fila</a></td></tr>
 <tr class="separator:a0f791f085a438fc76b287e0619e3fcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8c738f898fb15cac033f2f1d6c8e23" id="r_a3d8c738f898fb15cac033f2f1d6c8e23"><td class="memItemLeft" align="right" valign="top">typedef struct iterador&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d8c738f898fb15cac033f2f1d6c8e23">iterador</a></td></tr>
+<tr class="separator:a3d8c738f898fb15cac033f2f1d6c8e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funções</h2></td></tr>
@@ -166,6 +171,21 @@ Funções</h2></td></tr>
 <tr class="memitem:a184964edd8a87a14e7a6daf8e2089d8f" id="r_a184964edd8a87a14e7a6daf8e2089d8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a184964edd8a87a14e7a6daf8e2089d8f">fila_fim_data</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
 <tr class="memdesc:a184964edd8a87a14e7a6daf8e2089d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o endereço de memória do dado do fim da fila.  <br /></td></tr>
 <tr class="separator:a184964edd8a87a14e7a6daf8e2089d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ded97f1569fd0fe64f0ebdc684dbf1" id="r_af9ded97f1569fd0fe64f0ebdc684dbf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structiterador.html">iterador</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9ded97f1569fd0fe64f0ebdc684dbf1">primeiro</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
+<tr class="memdesc:af9ded97f1569fd0fe64f0ebdc684dbf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o iterador para o primeiro elemento da fila.  <br /></td></tr>
+<tr class="separator:af9ded97f1569fd0fe64f0ebdc684dbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3d849c803f30ece5a0b509c9749bf8" id="r_a4a3d849c803f30ece5a0b509c9749bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structiterador.html">iterador</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a3d849c803f30ece5a0b509c9749bf8">ultimo</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
+<tr class="memdesc:a4a3d849c803f30ece5a0b509c9749bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o iterador para o último elemento da fila.  <br /></td></tr>
+<tr class="separator:a4a3d849c803f30ece5a0b509c9749bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9481b48b15bbc495371202157bd28002" id="r_a9481b48b15bbc495371202157bd28002"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9481b48b15bbc495371202157bd28002">proximo</a> (<a class="el" href="structiterador.html">iterador</a> *i)</td></tr>
+<tr class="memdesc:a9481b48b15bbc495371202157bd28002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro.  <br /></td></tr>
+<tr class="separator:a9481b48b15bbc495371202157bd28002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171fca57a7effb209c5df208ca9607d9" id="r_a171fca57a7effb209c5df208ca9607d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a171fca57a7effb209c5df208ca9607d9">anterior</a> (<a class="el" href="structiterador.html">iterador</a> *i)</td></tr>
+<tr class="memdesc:a171fca57a7effb209c5df208ca9607d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro.  <br /></td></tr>
+<tr class="separator:a171fca57a7effb209c5df208ca9607d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a58bc5fa9d9b02ef517befcf1f4d27" id="r_a48a58bc5fa9d9b02ef517befcf1f4d27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a58bc5fa9d9b02ef517befcf1f4d27">acabou</a> (<a class="el" href="structiterador.html">iterador</a> i)</td></tr>
+<tr class="memdesc:a48a58bc5fa9d9b02ef517befcf1f4d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o iterador está apontando para o sentinela da fila.  <br /></td></tr>
+<tr class="separator:a48a58bc5fa9d9b02ef517befcf1f4d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Protótipos das funções de uma fila. </p>
@@ -178,6 +198,20 @@ Funções</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct fila fila</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d8c738f898fb15cac033f2f1d6c8e23" name="a3d8c738f898fb15cac033f2f1d6c8e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8c738f898fb15cac033f2f1d6c8e23">&#9670;&#160;</a></span>iterador</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct iterador iterador</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -199,6 +233,66 @@ Funções</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Funções</h2>
+<a id="a48a58bc5fa9d9b02ef517befcf1f4d27" name="a48a58bc5fa9d9b02ef517befcf1f4d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a58bc5fa9d9b02ef517befcf1f4d27">&#9670;&#160;</a></span>acabou()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int acabou </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiterador.html">iterador</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se o iterador está apontando para o sentinela da fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>ponteiro para o iterador</td></tr>
+    <tr><td class="paramname">i</td><td>ponteiro para o iterador </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>1 se o iterador aponta para o sentinela, 0 caso contrário </dd></dl>
+
+</div>
+</div>
+<a id="a171fca57a7effb209c5df208ca9607d9" name="a171fca57a7effb209c5df208ca9607d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a171fca57a7effb209c5df208ca9607d9">&#9670;&#160;</a></span>anterior()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int anterior </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiterador.html">iterador</a> *</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>ponteiro para o iterador</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>ponteiro para o iterador </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 0 se ainda havia um elemento anterior, 1 caso contrário (o iterador deu a volta) </dd></dl>
+
+</div>
+</div>
 <a id="a7012e752fb56a30d9cf8f2060b461894" name="a7012e752fb56a30d9cf8f2060b461894"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7012e752fb56a30d9cf8f2060b461894">&#9670;&#160;</a></span>fila_destruir()</h2>
 
@@ -419,6 +513,93 @@ Funções</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>int 1 se a fila estiver vazia, int 0 caso contrário </dd></dl>
+
+</div>
+</div>
+<a id="af9ded97f1569fd0fe64f0ebdc684dbf1" name="af9ded97f1569fd0fe64f0ebdc684dbf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ded97f1569fd0fe64f0ebdc684dbf1">&#9670;&#160;</a></span>primeiro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structiterador.html">iterador</a> primeiro </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o iterador para o primeiro elemento da fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila</td></tr>
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>struct iterador i na primeira posição da fila </dd></dl>
+
+</div>
+</div>
+<a id="a9481b48b15bbc495371202157bd28002" name="a9481b48b15bbc495371202157bd28002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9481b48b15bbc495371202157bd28002">&#9670;&#160;</a></span>proximo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int proximo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiterador.html">iterador</a> *</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>ponteiro para o iterador</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>ponteiro para o iterador </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 0 se ainda havia um próximo elemento, 1 caso contrário (o iterador deu a volta) </dd></dl>
+
+</div>
+</div>
+<a id="a4a3d849c803f30ece5a0b509c9749bf8" name="a4a3d849c803f30ece5a0b509c9749bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a3d849c803f30ece5a0b509c9749bf8">&#9670;&#160;</a></span>ultimo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structiterador.html">iterador</a> ultimo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna o iterador para o último elemento da fila. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ponteiro para a fila</td></tr>
+    <tr><td class="paramname">f</td><td>ponteiro para a fila </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>struct iterador i na última posição da fila </dd></dl>
 
 </div>
 </div>
