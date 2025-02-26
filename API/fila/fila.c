@@ -132,3 +132,84 @@ T *fila_fim_data(fila *f)
 
     return &(f->sentinela->prev->data);
 }
+
+/**
+ * \brief Retorna o iterador para o primeiro elemento da fila.
+ *
+ * \param f ponteiro para a fila
+ * \return struct iterador i na primeira posição da fila
+ */
+iterador primeiro(fila *f)
+{
+    iterador i;
+
+    i.posicao = f->sentinela->next;
+    i.estrutura = f;
+
+    return i;
+}
+
+/**
+ * \brief Retorna o iterador para o último elemento da fila.
+ *
+ * \param f ponteiro para a fila
+ * \return struct iterador i na última posição da fila
+ */
+iterador ultimo(fila *f)
+{
+    iterador i;
+
+    i.posicao = f->sentinela->prev;
+    i.estrutura = f;
+
+    return i;
+}
+
+/**
+ * \brief Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro. Como estamos tratando de uma lista circular, o iterador pode retornar.
+ *
+ * \param i ponteiro para o iterador
+ * \return retorna 0 se ainda havia um próximo elemento, 1 caso contrário (o iterador deu a volta)
+ */
+int proximo(iterador *i)
+{
+    i->posicao = i->posicao->next;
+
+    if (acabou(*i))
+    {
+        i->posicao = i->posicao->next;
+        return 1;
+    }
+
+    return 0;
+}
+
+/**
+ * \brief Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro. Como estamos tratando de uma lista circular, o iterador pode retornar.
+ *
+ * \param i ponteiro para o iterador
+ * \return retorna 0 se ainda havia um elemento anterior, 1 caso contrário (o iterador deu a volta)
+ */
+int anterior(iterador *i)
+{
+    i->posicao = i->posicao->prev;
+
+    if (acabou(*i))
+    {
+        i->posicao = i->posicao->prev;
+        return 1;
+    }
+
+    return 0;
+}
+
+/**
+ * \brief Verifica se o iterador está apontando para o sentinela da fila.
+ *
+ * \param i ponteiro para o iterador
+ * \return 1 se o iterador aponta para o sentinela, 0 caso contrário
+ */
+int acabou(iterador i)
+{
+    return (i.posicao == i.estrutura->sentinela);
+}

@@ -52,6 +52,24 @@ typedef struct fila
 } fila;
 
 /**
+ * \struct iterador
+ * \brief Estrutura de um iterador.
+ *
+ * Um iterador possibilita algumas operações muito práticas em nossa lista, como acessar elementos adjacentes.
+ *
+ * \var iterador::posição
+ * Ponteiro para o nó iterado
+ *
+ * \var iterador::estrutura
+ * Ponteiro a fila iterada
+ */
+typedef struct iterador
+{
+    node *posicao;
+    fila *estrutura;
+} iterador;
+
+/**
  * \brief Inicializa uma fila.
  *
  * \param f ponteiro para a fila
@@ -108,5 +126,40 @@ T *fila_inicio_data(fila *f);
  * \param f ponteiro para a fila
  */
 T *fila_fim_data(fila *f);
+
+/**
+ * \brief Retorna o iterador para o primeiro elemento da fila.
+ *
+ * \param f ponteiro para a fila
+ */
+iterador primeiro(fila *f);
+
+/**
+ * \brief Retorna o iterador para o último elemento da fila.
+ *
+ * \param f ponteiro para a fila
+ */
+iterador ultimo(fila *f);
+
+/**
+ * \brief Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro.
+ *
+ * \param i ponteiro para o iterador
+ */
+int proximo(iterador *i);
+
+/**
+ * \brief Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro.
+ *
+ * \param i ponteiro para o iterador
+ */
+int anterior(iterador *i);
+
+/**
+ * \brief Verifica se o iterador está apontando para o sentinela da fila.
+ *
+ * \param i ponteiro para o iterador
+ */
+int acabou(iterador i);
 
 #endif
