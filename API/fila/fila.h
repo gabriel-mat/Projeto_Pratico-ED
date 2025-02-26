@@ -57,7 +57,7 @@ typedef struct fila
  *
  * Um iterador possibilita algumas operações muito práticas em nossa lista, como acessar elementos adjacentes.
  *
- * \var iterador::posição
+ * \var iterador::posicao
  * Ponteiro para o nó iterado
  *
  * \var iterador::estrutura
