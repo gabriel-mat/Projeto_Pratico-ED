@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 #include "../API/fila/fila.h"
 #include "../API/deque/deque.h"
+#include "../API/pilha/pilha.h"
 
 #define NUM_FASES 5
+#define MAX_COMANDO 15
 
 // Protótipos de funções e procedimentos
 
@@ -12,6 +15,9 @@ void menu();
 void iniciar();
 void como_jogar();
 void regras();
+void msg_max_movs();
+int jogar_fase(int num);
+pilha criar_torre(int num);
 
 void limpar_tela();
 
@@ -67,11 +73,64 @@ void menu()
 
 void iniciar()
 {
-    limpar_tela();
+    int game_over;
+    iterador it;
+    fila fases;
+
+    fila_inicializa(&fases, NUM_FASES);
+
+    for (int i = 1; i <= NUM_FASES; i++)
+        fila_inserir(&fases, i);
+
+    it = primeiro(&fases);
+
+    msg_max_movs();
 }
 
 void como_jogar() {}
 void regras() {}
+
+void msg_max_movs()
+{
+    limpar_tela();
+
+    printf("\tGAME OVER\n");
+    printf("\tNumero maximo de movimentos atingido, tente novamente!");
+    scanf("%*c");
+    getchar();
+}
+
+int jogar_fase(int num)
+{
+    pilha A, B, C;
+    int movs, max_movs;
+    char comando[MAX_COMANDO + 1];
+
+    movs = 0;
+    max_movs = pow(2, num) - 1;
+
+    A = criar_torre(num);
+    B = criar_torre(0);
+    C = criar_torre(0);
+
+    while (movs <= max_movs)
+    {
+    }
+
+    return 1;
+}
+
+pilha criar_torre(int num)
+{
+    pilha p;
+
+    pilha_inicializa(&p);
+
+    for (int i = num; i > 0; i--)
+        pilha_inserir(&p, i);
+
+    return (p);
+}
 
 void limpar_tela()
 {
