@@ -54,10 +54,12 @@ void menu()
             break;
 
         case 2:
+            opt = 0;
             como_jogar();
             break;
 
         case 3:
+            opt = 0;
             regras();
             break;
 
@@ -107,38 +109,23 @@ void como_jogar()
     limpar_tela();
 }
 
-void regras() 
+void regras()
 {
+    limpar_tela();
 
+    printf("REGRAS:\n\n");
+    printf("O quebra-cabeca consiste em uma base com tres pinos, onde varios discos sao empilhados em um deles,\n");
+    printf("organizados em ordem crescente de diametro, do menor no topo ao maior na base.\n");
+    printf("O desafio e transferir todos os discos para outro pino, utilizando o terceiro como auxiliar,\n");
+    printf("seguindo tres regras fundamentais:\n\n");
+    printf("1. Apenas um disco pode ser movido por vez.\n");
+    printf("2. Nenhum disco maior pode ficar sobre um menor em nenhum momento.\n");
+    printf("3. Ha um numero limitado de movimentos para concluir o desafio.\n\n");
+    printf("A solucao exige planejamento estrategico e raciocinio logico para garantir\n");
+    printf("que todos os discos sejam movidos corretamente dentro do limite de jogadas. Boa sorte!\n\n");
 
-    int opt;
-    do
-    {
-
-        limpar_tela();
-
-        printf("REGRAS:\n\n");
-        printf("O quebra-cabeca consiste em uma base com tres pinos, onde varios discos sao empilhados em um deles,\n");
-        printf("organizados em ordem crescente de diametro, do menor no topo ao maior na base.\n");
-        printf("O desafio e transferir todos os discos para outro pino, utilizando o terceiro como auxiliar,\n");
-        printf("seguindo tres regras fundamentais:\n\n");
-        printf("1. Apenas um disco pode ser movido por vez.\n");
-        printf("2. Nenhum disco maior pode ficar sobre um menor em nenhum momento.\n");
-        printf("3. Ha um numero limitado de movimentos para concluir o desafio.\n\n");
-        printf("A solucao exige planejamento estrategico e raciocinio logico para garantir\n");
-        printf("que todos os discos sejam movidos corretamente dentro do limite de jogadas. Boa sorte!\n\n");
-
-        printf("Digite um numero para voltar ao menu: ");
-        scanf("%d", &opt);
-
-        switch (opt)
-        {
-        default:
-            menu();
-            break;
-        }
-    } while (!opt);
-
+    scanf("%*c");
+    getchar();
 }
 
 void msg_max_movs()
