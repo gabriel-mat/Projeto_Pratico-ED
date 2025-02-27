@@ -119,3 +119,12 @@ void pilha_imprimir(pilha *p)
   for (int i = 0; i < p->qtd; i++)
     printf("%d ", p->array[(p->inicio + i + 1 + MAX_SIZE) % MAX_SIZE]);
 }
+/**
+ * \brief Retorna o tamanho da pilha.
+ *
+ * \param p ponteiro para a pilha.
+ * \return quantos elementos estão dentro da pilha.
+ */
+int pilha_tamanho(pilha* p){
+  return p->qtd;
+}

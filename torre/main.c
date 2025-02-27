@@ -2,7 +2,7 @@
  * @file main.c
  * @authors André, Arthur, Gabriel e Otávio
  * @brief Arquivo principal
- * 
+ *
  * Arquivo principal com a implementação do quebra-cabeça.
  */
 
@@ -29,53 +29,53 @@
 // Protótipos de funções e procedimentos
 
 /**
- * @brief Mostra ao usuário o menu principal do jogo. 
+ * @brief Mostra ao usuário o menu principal do jogo.
  * @details Esse menu é composto pelas opções de "iniciar", "como jogar" e "regras".
- * 
+ *
  */
 void menu();
 
 /**
  * @brief Inicia o jogo.
- * 
+ *
  */
 void iniciar();
 
 /**
  * @brief Mostra ao usuário instruções de como utilizar corretamente a aplicação.
- * 
+ *
  */
 void como_jogar();
 
 /**
  * @brief Mostra ao usuário regras básicas do quebra-cabeça "Torre de hanói".
- * 
+ *
  */
 void regras();
 
 /**
  * @brief Mostra ao usuário uma mensagem caso ele atinja o número máximo de movimentos.
- * 
+ *
  */
 void msg_max_movs();
 
 /**
  * @brief Limpa o buffer de entrada para que a próxima entrada seja lida corretamente.
- * 
+ *
  */
 void limpar_buffer();
 
 /**
- * @brief 
- * 
- * @param num 
- * @return int 
+ * @brief
+ *
+ * @param num
+ * @return int
  */
 int jogar_fase(int num);
 
 /**
  * @brief Inicializa a torre inical com os discos.
- * 
+ *
  * @param num Número de discos da torre.
  * @return pilha: Torre com os discos prontos para o ínicio do jogo.
  */
@@ -84,9 +84,87 @@ pilha criar_torre(int num);
 /**
  * @brief Limpa o terminal do usuário.
  * Essa função limpa o terminal do usuário de acordo com o sistema operacional utilizado.
- * 
+ *
  */
 void limpar_tela();
+
+
+/**
+ * @brief Copia os elementos de uma pilha para um vetor.
+ * 
+ * Esta função transfere os elementos de uma pilha para um vetor, 
+ * garantindo que a pilha original permaneça inalterada.
+ * 
+ * @param p1 Ponteiro para a pilha a ser copiada.
+ * @param v Vetor onde os elementos da pilha serão armazenados.
+ */
+void copiar_pilha(pilha* p1, int v[]){
+    int i = 0;
+    for(i = 0; i < 5 - pilha_tamanho(p1); i++){
+        v[i] = 0;
+    }
+    while(!pilha_vazia(p1)){
+        v[i] = pilha_topo(p1);
+        pilha_remover(p1);
+        copiar_pilha(p1, v);
+        pilha_inserir(p1, v[i]);
+        i++;
+    }
+}
+
+/**
+ * @brief Exibe um andar de uma torre.
+ * 
+ * Esta função imprime visualmente um andar específico de uma torre.
+ * 
+ * @param v Vetor que representa a torre.
+ * @param andar O nível da torre a ser impresso (de 1 a 5).
+ */
+void printar_andar_torre(int v[], int andar){
+    int espacos, discos;
+    printf("  ");
+    espacos = 5 - v[5 - andar];
+    while(espacos){
+        printf(" ");
+        espacos--;
+    }
+    discos = v[5 - andar];
+    while(discos){
+        printf("=");
+        discos--;
+    }
+    printf("|");
+    discos = v[5 - andar];
+    while(discos){
+        printf("=");
+        discos--;
+    }
+    espacos = 5 - v[5 - andar];
+    while(espacos){
+        printf(" ");
+        espacos--;
+    }
+}
+
+/**
+ * @brief Exibe as torres do jogo.
+ * 
+ * Esta função imprime visualmente o estado atual das torres,
+ * mostrando a disposição dos discos para o usuário.
+ * 
+ * @param v1 Vetor representando a primeira torre.
+ * @param v2 Vetor representando a segunda torre.
+ * @param v3 Vetor representando a terceira torre.
+ */
+void printar_torre(int v1[], int v2[], int v3[]){
+    printf("       A            B            C\n");
+    for(int i = 5; i >= 1; i--){
+        printar_andar_torre(v1, i);
+        printar_andar_torre(v2, i);
+        printar_andar_torre(v3, i);
+        printf("\n");
+    }
+}
 
 int main()
 {
