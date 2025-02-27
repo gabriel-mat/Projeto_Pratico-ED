@@ -2,7 +2,7 @@
  * @file main.c
  * @authors André, Arthur, Gabriel e Otávio
  * @brief Arquivo principal
- * 
+ *
  * Arquivo principal com a implementação do quebra-cabeça.
  */
 
@@ -29,53 +29,69 @@
 // Protótipos de funções e procedimentos
 
 /**
- * @brief Mostra ao usuário o menu principal do jogo. 
+ * @brief Mostra ao usuário o menu principal do jogo.
  * @details Esse menu é composto pelas opções de "iniciar", "como jogar" e "regras".
- * 
+ *
  */
 void menu();
 
 /**
  * @brief Inicia o jogo.
- * 
+ *
  */
 void iniciar();
 
 /**
  * @brief Mostra ao usuário instruções de como utilizar corretamente a aplicação.
- * 
+ *
  */
 void como_jogar();
 
 /**
  * @brief Mostra ao usuário regras básicas do quebra-cabeça "Torre de hanói".
- * 
+ *
  */
 void regras();
 
 /**
  * @brief Mostra ao usuário uma mensagem caso ele atinja o número máximo de movimentos.
- * 
+ *
  */
 void msg_max_movs();
 
 /**
+ * @brief Mostra ao usuário uma mensagem caso ele passe por todas as fases.
+ *
+ */
+void msg_final();
+
+/**
  * @brief Limpa o buffer de entrada para que a próxima entrada seja lida corretamente.
- * 
+ *
  */
 void limpar_buffer();
 
 /**
- * @brief 
- * 
- * @param num 
- * @return int 
+ * @brief
+ *
+ * @param i iterador para a fase
+ * @return int
  */
-int jogar_fase(int num);
+int jogar_fase(iterador i);
+
+/**
+ * @brief
+ *
+ * @param A
+ * @param B
+ * @param C
+ * @return int
+ */
+int vitoria(pilha *A, pilha *B, pilha *C);
 
 /**
  * @brief Inicializa a torre inical com os discos.
- * 
+ *
  * @param num Número de discos da torre.
  * @return pilha: Torre com os discos prontos para o ínicio do jogo.
  */
@@ -84,7 +100,7 @@ pilha criar_torre(int num);
 /**
  * @brief Limpa o terminal do usuário.
  * Essa função limpa o terminal do usuário de acordo com o sistema operacional utilizado.
- * 
+ *
  */
 void limpar_tela();
 
@@ -117,6 +133,7 @@ void menu()
         switch (opt)
         {
         case 1:
+            opt = 0;
             iniciar();
             break;
 
@@ -142,7 +159,7 @@ void menu()
 
 void iniciar()
 {
-    int game_over;
+    int game_over, fim;
     iterador it;
     fila fases;
 
@@ -152,6 +169,26 @@ void iniciar()
         fila_inserir(&fases, i);
 
     it = primeiro(&fases);
+
+    for (int i = 0; i < NUM_FASES; i++)
+    {
+        game_over = jogar_fase(it);
+
+        if (!game_over)
+        {
+            fim = proximo(&it);
+            if (fim)
+            {
+                msg_final();
+                return;
+            }
+        }
+        else
+        {
+            msg_max_movs();
+            i--;
+        }
+    }
 
     msg_max_movs();
 }
@@ -198,26 +235,38 @@ void msg_max_movs()
     limpar_tela();
 
     printf("\tGAME OVER\n");
-    printf("\tNumero maximo de movimentos atingido, tente novamente!");
+    printf("\tNumero maximo de movimentos atingido, tente novamente!\n");
     limpar_buffer();
     getchar();
 }
 
-int jogar_fase(int num)
+void msg_final()
+{
+    limpar_tela();
+
+    printf("\tVOCE VENCEU!\n");
+    printf("\tVamos considerar aumentar o nivel na proxima.\n");
+    limpar_buffer();
+    getchar();
+}
+
+int jogar_fase(iterador i)
 {
     pilha A, B, C;
-    int movs, max_movs;
+    int movs, max_movs, num;
     char comando[MAX_COMANDO + 1];
 
     movs = 0;
+    num = (i.posicao)->data;
     max_movs = pow(2, num) - 1;
 
     A = criar_torre(num);
     B = criar_torre(0);
     C = criar_torre(0);
 
-    while (movs <= max_movs)
+    while (!vitoria(&A, &B, &C))
     {
+        
     }
 
     return 1;
@@ -227,6 +276,11 @@ void limpar_buffer()
 {
     while (getchar() != '\n')
         ;
+}
+
+int vitoria(pilha *A, pilha *B, pilha *C)
+{
+    return (vazia(A) && (vazia(B) || vazia(C)));
 }
 
 pilha criar_torre(int num)
