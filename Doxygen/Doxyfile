@@ -54,7 +54,7 @@ PROJECT_NUMBER         = v1.1
 # for a project that appears at the top of each page and should give viewers a
 # quick idea about the purpose of the project. Keep the description short.
 
-PROJECT_BRIEF          =
+PROJECT_BRIEF          = Projeto de Estrutura de Dados sobre o quebra-cabeça "Torre de Hanói".
 
 # With the PROJECT_LOGO tag one can specify a logo or an icon that is included
 # in the documentation. The maximum height of the logo should not exceed 55
@@ -178,7 +178,7 @@ INLINE_INHERITED_MEMB  = NO
 # shortest path that makes the file name unique will be used
 # The default value is: YES.
 
-FULL_PATH_NAMES        = YES
+FULL_PATH_NAMES        = NO
 
 # The STRIP_FROM_PATH tag can be used to strip a user-defined part of the path.
 # Stripping is only done if one of the specified strings matches the left-hand
@@ -298,7 +298,7 @@ ALIASES                =
 # members will be omitted, etc.
 # The default value is: NO.
 
-OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_FOR_C  = YES
 
 # Set the OPTIMIZE_OUTPUT_JAVA tag to YES if your project consists of Java or
 # Python sources only. Doxygen will then generate output that is more tailored
@@ -991,7 +991,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = ../API / ../README.md
+INPUT                  = ../API / ../README.md / ../torre
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
@@ -1406,9 +1406,9 @@ HTML_STYLESHEET        =
 # documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css \
-                        doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
-                        doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css
+HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css
+# doxygen-awesome-css/doxygen-awesome-sidebar-only.css
+# doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css
 
 # The HTML_EXTRA_FILES tag can be used to specify one or more extra images or
 # other source files which should be copied to the HTML output directory. Note
@@ -1431,7 +1431,7 @@ HTML_EXTRA_FILES       = doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js
 # The default value is: AUTO_LIGHT.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_COLORSTYLE        =  DARK # required with Doxygen >= 1.9.5
+HTML_COLORSTYLE        =  LIGHT # required with Doxygen >= 1.9.5
 
 # The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. Doxygen
 # will adjust the colors in the style sheet and background images according to

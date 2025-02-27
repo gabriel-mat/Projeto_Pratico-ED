@@ -1,12 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "acdefimnpqrstuv🗼",
+  0: "acdefijlmnpqrstuv🗼",
   1: "dfinp",
-  2: "dfpr",
-  3: "acdefipruv",
+  2: "dfmpr",
+  3: "acdefijlmpruv",
   4: "adefimnpqs",
   5: "fint",
-  6: "m",
+  6: "mn",
   7: "dep🗼"
 };
 
@@ -25,7 +25,7 @@ var indexSectionNames =
 var indexSectionLabels =
 {
   0: "Todos",
-  1: "Classes",
+  1: "Estruturas de dados",
   2: "Arquivos",
   3: "Funções",
   4: "Variáveis",

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['max_5fsize_0',['MAX_SIZE',['../pilha_8c.html#a0592dba56693fad79136250c11e5a7fe',1,'pilha.c']]],
-  ['max_5fsize_1',['max_size',['../structdeque.html#a79e1c28868e63d6c55899d26fa5514f4',1,'deque']]]
+  ['jogar_5ffase_0',['jogar_fase',['../main_8c.html#aba12dbb9e6be4419cd29092ae41cdbad',1,'main.c']]]
 ];

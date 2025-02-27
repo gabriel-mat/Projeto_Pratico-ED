@@ -1,20 +1,10 @@
 var searchData=
 [
-  ['pilha_0',['pilha',['../structpilha.html',1,'']]],
-  ['pilha_2ec_1',['pilha.c',['../pilha_8c.html',1,'']]],
-  ['pilha_2eh_2',['pilha.h',['../pilha_8h.html',1,'']]],
-  ['pilha_5fcheia_3',['pilha_cheia',['../pilha_8c.html#ae9ebb8923d404d0114197094afb4b8c4',1,'pilha_cheia(pilha *p):&#160;pilha.c'],['../pilha_8h.html#ae9ebb8923d404d0114197094afb4b8c4',1,'pilha_cheia(pilha *p):&#160;pilha.c']]],
-  ['pilha_5fdestruir_4',['pilha_destruir',['../pilha_8c.html#a32088f5ef220c3dc449e02d9bf258239',1,'pilha_destruir(pilha *p):&#160;pilha.c'],['../pilha_8h.html#a32088f5ef220c3dc449e02d9bf258239',1,'pilha_destruir(pilha *p):&#160;pilha.c']]],
-  ['pilha_5fimprimir_5',['pilha_imprimir',['../pilha_8c.html#a973e87db43aaf666601153501c5e6159',1,'pilha_imprimir(pilha *p):&#160;pilha.c'],['../pilha_8h.html#a973e87db43aaf666601153501c5e6159',1,'pilha_imprimir(pilha *p):&#160;pilha.c']]],
-  ['pilha_5finicializa_6',['pilha_inicializa',['../pilha_8c.html#a1921d98f98152f1aa004b254f9098de0',1,'pilha_inicializa(pilha *p):&#160;pilha.c'],['../pilha_8h.html#a1921d98f98152f1aa004b254f9098de0',1,'pilha_inicializa(pilha *p):&#160;pilha.c']]],
-  ['pilha_5finserir_7',['pilha_inserir',['../pilha_8c.html#a3e78edcec75d2a88bf2fd3b388902825',1,'pilha_inserir(pilha *p, T data):&#160;pilha.c'],['../pilha_8h.html#a3e78edcec75d2a88bf2fd3b388902825',1,'pilha_inserir(pilha *p, T data):&#160;pilha.c']]],
-  ['pilha_5fremover_8',['pilha_remover',['../pilha_8c.html#a78865c6fea3cbf27125b40f7e6345dbf',1,'pilha_remover(pilha *p):&#160;pilha.c'],['../pilha_8h.html#a78865c6fea3cbf27125b40f7e6345dbf',1,'pilha_remover(pilha *p):&#160;pilha.c']]],
-  ['pilha_5ftopo_9',['pilha_topo',['../pilha_8c.html#ab627d69c150e94f1b482204c01e30766',1,'pilha_topo(pilha *p):&#160;pilha.c'],['../pilha_8h.html#ab627d69c150e94f1b482204c01e30766',1,'pilha_topo(pilha *p):&#160;pilha.c']]],
-  ['pilha_5fvazia_10',['pilha_vazia',['../pilha_8c.html#a737a7975e64b5ebd5e7b0847ce639a4d',1,'pilha_vazia(pilha *p):&#160;pilha.c'],['../pilha_8h.html#a737a7975e64b5ebd5e7b0847ce639a4d',1,'pilha_vazia(pilha *p):&#160;pilha.c']]],
-  ['posicao_11',['posicao',['../structiterador.html#a4bd52821fe2464ca65dcfe76bac48b64',1,'iterador']]],
-  ['prático_20estrutura_20de_20dados_20🗼🇻🇳_12',['Projeto prático - Estrutura de Dados - 🗼🇻🇳',['../index.html',1,'']]],
-  ['prev_13',['prev',['../structnode.html#a92deb3306828ea2e354857923911a5d1',1,'node']]],
-  ['primeiro_14',['primeiro',['../fila_8c.html#af9ded97f1569fd0fe64f0ebdc684dbf1',1,'primeiro(fila *f):&#160;fila.c'],['../fila_8h.html#af9ded97f1569fd0fe64f0ebdc684dbf1',1,'primeiro(fila *f):&#160;fila.c']]],
-  ['projeto_20prático_20estrutura_20de_20dados_20🗼🇻🇳_15',['Projeto prático - Estrutura de Dados - 🗼🇻🇳',['../index.html',1,'']]],
-  ['proximo_16',['proximo',['../fila_8c.html#a9481b48b15bbc495371202157bd28002',1,'proximo(iterador *i):&#160;fila.c'],['../fila_8h.html#a9481b48b15bbc495371202157bd28002',1,'proximo(iterador *i):&#160;fila.c']]]
+  ['main_0',['main',['../main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.c']]],
+  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]],
+  ['max_5fcomando_2',['MAX_COMANDO',['../main_8c.html#a1f729a30b4cbe12230cfd86ba7e5d4ef',1,'main.c']]],
+  ['max_5fsize_3',['MAX_SIZE',['../pilha_8c.html#a0592dba56693fad79136250c11e5a7fe',1,'pilha.c']]],
+  ['max_5fsize_4',['max_size',['../structdeque.html#a79e1c28868e63d6c55899d26fa5514f4',1,'deque']]],
+  ['menu_5',['menu',['../main_8c.html#a2a0e843767aeea4f433a28b9c54f573a',1,'main.c']]],
+  ['msg_5fmax_5fmovs_6',['msg_max_movs',['../main_8c.html#af85dcf7f1ea9191f2851e5241e121d06',1,'main.c']]]
 ];
