@@ -1,3 +1,14 @@
+/**
+ * @file main.c
+ * @author André, Arthur, Gabriel e Otávio
+ * @brief Arquivo principal
+ * @version 0.1
+ * @date 2025-02-27
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -11,10 +22,34 @@
 
 // Protótipos de funções e procedimentos
 
+/**
+ * @brief Menu principal do projeto.
+ * 
+ */
 void menu();
+
+/**
+ * @brief Iniciar a aplicação.
+ * 
+ */
 void iniciar();
+
+/**
+ * @brief Instruções de como utilizar corretamento a aplicação.
+ * 
+ */
 void como_jogar();
+
+/**
+ * @brief Regras básicas do quebra-cabeça "Torre de hanói".
+ * 
+ */
 void regras();
+
+/**
+ * @brief Mensagem caso o usuário atinja o número máximo de movimentos.
+ * 
+ */
 void msg_max_movs();
 void limpar_buffer();
 int jogar_fase(int num);

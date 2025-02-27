@@ -14,8 +14,8 @@
 /**
  * \brief Inicializa uma pilha.
  *
- * \param p ponteiro para a pilha
- * \return int 0 se inicializou com sucesso, 1 caso contrário
+ * \param p ponteiro para a pilha.
+ * \return int 0 se inicializou com sucesso, 1 caso contrário.
  */
 int pilha_inicializa(pilha *p)
 {
@@ -33,8 +33,8 @@ int pilha_inicializa(pilha *p)
 /**
  * \brief Destroi uma pilha.
  *
- * \param p ponteiro para a pilha
- * \return int 0 se destruiu com sucesso, 1 caso contrário
+ * \param p ponteiro para a pilha.
+ * \return int 0 se destruiu com sucesso, 1 caso contrário.
  */
 int pilha_destruir(pilha *p)
 {
@@ -49,25 +49,25 @@ int pilha_destruir(pilha *p)
 /**
  * \brief Verifica se a pilha está vazia.
  *
- * \param p ponteiro para a pilha
- * \return int 1 se vazia, 0 caso contrário
+ * \param p ponteiro para a pilha.
+ * \return int 1 se vazia, 0 caso contrário.
  */
 int pilha_vazia(pilha *p) { return (p->qtd == 0); }
 
 /**
  * \brief Verifica se a pilha está cheia.
  *
- * \param p ponteiro para a pilha
- * \return int 1 se cheia, 0 caso contrário
+ * \param p ponteiro para a pilha.
+ * \return int 1 se cheia, 0 caso contrário.
  */
 int pilha_cheia(pilha *p) { return (p->qtd >= MAX_SIZE); }
 
 /**
  * \brief Insere um elemento no topo da pilha.
  *
- * \param p ponteiro para a pilha
- * \param data elemento a ser inserido
- * \return int 0 se inseriu com sucesso, 1 caso contrário
+ * \param p ponteiro para a pilha.
+ * \param data elemento a ser inserido.
+ * \return int 0 se inseriu com sucesso, 1 caso a pilha esteja cheia.
  */
 int pilha_inserir(pilha *p, T data)
 {
@@ -83,8 +83,8 @@ int pilha_inserir(pilha *p, T data)
 /**
  * \brief Remove um elemento do topo da pilha.
  *
- * \param p ponteiro para a pilha
- * \return int 0 se removeu com sucesso, 1 caso contrário
+ * \param p ponteiro para a pilha.
+ * \return int 0 se removeu com sucesso, 1 caso a pilha esteja vazia.
  */
 int pilha_remover(pilha *p)
 {
@@ -99,8 +99,8 @@ int pilha_remover(pilha *p)
 /**
  * \brief Retorna o elemento armazenado do topo da pilha.
  *
- * \param p ponteiro para a pilha
- * \return int* ponteiro para o elemento do início, NULL se vazio
+ * \param p ponteiro para a pilha.
+ * \return int* ponteiro para o elemento do início, NULL caso a pilha esteja vazia.
  */
 int *pilha_topo(pilha *p)
 {
@@ -112,7 +112,7 @@ int *pilha_topo(pilha *p)
 /**
  * \brief Imprime a pilha do topo à base.
  *
- * \param p ponteiro para a pilha
+ * \param p ponteiro para a pilha.
  */
 void pilha_imprimir(pilha *p)
 {
