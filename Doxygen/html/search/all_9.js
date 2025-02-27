@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['qtd_0',['qtd',['../structdeque.html#a424c1f055f3595e3e97dd84684799a31',1,'deque::qtd'],['../structfila.html#ab8793a08103ab1b540ead63370b5c172',1,'fila::qtd'],['../structpilha.html#a96f762d61d1eee2d4f045357b8542a81',1,'pilha::qtd']]]
+  ['next_0',['next',['../structnode.html#aa3e8aa83f864292b5a01210f4453fcc0',1,'node']]],
+  ['node_1',['node',['../structnode.html',1,'node'],['../fila_8h.html#af4aeda155dbe167f1c1cf38cb65bf324',1,'node:&#160;fila.h']]],
+  ['num_5ffases_2',['NUM_FASES',['../main_8c.html#a3f6ecde955f54d249ea5cc39741f2e54',1,'main.c']]]
 ];

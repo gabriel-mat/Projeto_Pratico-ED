@@ -1,3 +1,11 @@
+/**
+ * @file main.c
+ * @authors André, Arthur, Gabriel e Otávio
+ * @brief Arquivo principal
+ * 
+ * Arquivo principal com a implementação do quebra-cabeça.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -6,20 +14,78 @@
 #include "../API/deque/deque.h"
 #include "../API/pilha/pilha.h"
 
+/**
+ * @def NUM_FASES
+ * Define o número máximo de fases do jogo.
+ */
 #define NUM_FASES 5
+
+/**
+ * @def MAX_COMANDO
+ * Número máximo do vetor de comando.
+ */
 #define MAX_COMANDO 15
 
 // Protótipos de funções e procedimentos
 
+/**
+ * @brief Mostra ao usuário o menu principal do jogo. 
+ * @details Esse menu é composto pelas opções de "iniciar", "como jogar" e "regras".
+ * 
+ */
 void menu();
+
+/**
+ * @brief Inicia o jogo.
+ * 
+ */
 void iniciar();
+
+/**
+ * @brief Mostra ao usuário instruções de como utilizar corretamente a aplicação.
+ * 
+ */
 void como_jogar();
+
+/**
+ * @brief Mostra ao usuário regras básicas do quebra-cabeça "Torre de hanói".
+ * 
+ */
 void regras();
+
+/**
+ * @brief Mostra ao usuário uma mensagem caso ele atinja o número máximo de movimentos.
+ * 
+ */
 void msg_max_movs();
+
+/**
+ * @brief Limpa o buffer de entrada para que a próxima entrada seja lida corretamente.
+ * 
+ */
 void limpar_buffer();
+
+/**
+ * @brief 
+ * 
+ * @param num 
+ * @return int 
+ */
 int jogar_fase(int num);
+
+/**
+ * @brief Inicializa a torre inical com os discos.
+ * 
+ * @param num Número de discos da torre.
+ * @return pilha: Torre com os discos prontos para o ínicio do jogo.
+ */
 pilha criar_torre(int num);
 
+/**
+ * @brief Limpa o terminal do usuário.
+ * Essa função limpa o terminal do usuário de acordo com o sistema operacional utilizado.
+ * 
+ */
 void limpar_tela();
 
 int main()

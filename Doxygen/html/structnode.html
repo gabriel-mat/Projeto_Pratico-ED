@@ -23,8 +23,6 @@
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
   <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
   <script type="text/javascript">
     DoxygenAwesomeDarkModeToggle.title = "Mude entre modo claro ou noturno"
@@ -44,6 +42,7 @@
                 <div id="projectname">Projeto Prático de ED<span
                     id="projectnumber">&#160;v1.1</span>
                 </div>
+                <div id="projectbrief">Projeto de Estrutura de Dados sobre o quebra-cabeça Torre de Hanói.</div>
               </td>
             </tr>
           </tbody>
@@ -112,8 +111,7 @@ $(function(){initNavTree('structnode.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Atributos Públicos</a> &#124;
-<a href="structnode-members.html">Lista de todos os Membros</a>  </div>
+<a href="#pub-attribs">Campos de Dados</a>  </div>
   <div class="headertitle"><div class="title">Referência da Estrutura node</div></div>
 </div><!--header-->
 <div class="contents">
@@ -124,7 +122,7 @@ $(function(){initNavTree('structnode.html',''); initResizable(true); });
 <p><code>#include &lt;<a class="el" href="fila_8h_source.html">fila.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Atributos Públicos</h2></td></tr>
+Campos de Dados</h2></td></tr>
 <tr class="memitem:acbce71a4d2c50357b61fb77fb0582f50" id="r_acbce71a4d2c50357b61fb77fb0582f50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="deque_8h.html#a9582e6e8e21f2a935d9f19fc744bc7a4">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbce71a4d2c50357b61fb77fb0582f50">data</a></td></tr>
 <tr class="separator:acbce71a4d2c50357b61fb77fb0582f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3e8aa83f864292b5a01210f4453fcc0" id="r_aa3e8aa83f864292b5a01210f4453fcc0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structnode.html">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3e8aa83f864292b5a01210f4453fcc0">next</a></td></tr>
@@ -134,8 +132,8 @@ Atributos Públicos</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
 <div class="textblock"><p>Estrutura de um nó. </p>
-<p>A estrutura node representa um nó da fila que armazena um dado e os ponteiros para o próximo nó e o nó anterior. </p>
-</div><h2 class="groupheader">Atributos</h2>
+<p>A estrutura node representa um nó da fila que armazena um dado e os ponteiros para o próximo nó e o nó anterior, sendo assim uma estrutura duplamente encadeada. </p>
+</div><h2 class="groupheader">Campos</h2>
 <a id="acbce71a4d2c50357b61fb77fb0582f50" name="acbce71a4d2c50357b61fb77fb0582f50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbce71a4d2c50357b61fb77fb0582f50">&#9670;&#160;</a></span>data</h2>
 
@@ -147,7 +145,7 @@ Atributos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Dado armazenado no nó </p>
+<p>Dado armazenado no nó. </p>
 
 </div>
 </div>
@@ -162,7 +160,7 @@ Atributos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Ponteiro para o próximo nó </p>
+<p>Ponteiro para o próximo nó. </p>
 
 </div>
 </div>
@@ -177,12 +175,12 @@ Atributos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Ponteiro para o nó anterior </p>
+<p>Ponteiro para o nó anterior. </p>
 
 </div>
 </div>
 <hr/>A documentação para essa estrutura foi gerada a partir do seguinte arquivo:<ul>
-<li>/home/gabriel/Desktop/BCC/ED/proj/API/fila/<a class="el" href="fila_8h_source.html">fila.h</a></li>
+<li><a class="el" href="fila_8h_source.html">fila.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

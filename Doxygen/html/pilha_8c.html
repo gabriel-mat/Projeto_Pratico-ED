@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11" />
   <meta name="generator" content="Doxygen 1.13.2" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projeto Prático de ED: Referência do Arquivo /home/gabriel/Desktop/BCC/ED/proj/API/pilha/pilha.c</title>
+  <title>Projeto Prático de ED: Referência do Arquivo pilha.c</title>
   <link rel="icon" href="vietnam2.png" type="image/x-icon" />
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
@@ -23,8 +23,6 @@
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
   <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
   <script type="text/javascript">
     DoxygenAwesomeDarkModeToggle.title = "Mude entre modo claro ou noturno"
@@ -44,6 +42,7 @@
                 <div id="projectname">Projeto Prático de ED<span
                     id="projectnumber">&#160;v1.1</span>
                 </div>
+                <div id="projectbrief">Projeto de Estrutura de Dados sobre o quebra-cabeça Torre de Hanói.</div>
               </td>
             </tr>
           </tbody>
@@ -195,11 +194,11 @@ Funções</h2></td></tr>
 <p>Verifica se a pilha atingiu a quantidade máxima de elementos.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>int 1 se cheia, 0 caso contrário </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 1 se cheia, 0 caso contrário. </dd></dl>
 
 </div>
 </div>
@@ -221,11 +220,11 @@ Funções</h2></td></tr>
 <p>Destroi uma pilha. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>int 0 se destruiu com sucesso, 1 caso contrário </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se destruiu com sucesso, 1 caso contrário. </dd></dl>
 
 </div>
 </div>
@@ -248,7 +247,7 @@ Funções</h2></td></tr>
 <p>Imprime a pilha desde o topo até a base.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha. </td></tr>
   </table>
   </dd>
 </dl>
@@ -273,11 +272,11 @@ Funções</h2></td></tr>
 <p>Inicializa uma pilha. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>int 0 se inicializou com sucesso, 1 caso contrário </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se inicializou com sucesso, 1 caso contrário. </dd></dl>
 
 </div>
 </div>
@@ -304,12 +303,12 @@ Funções</h2></td></tr>
 <p>Insere um elemento na pilha.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
-    <tr><td class="paramname">data</td><td>elemento a ser inserido </td></tr>
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha. </td></tr>
+    <tr><td class="paramname">data</td><td>elemento a ser inserido. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>int 0 se inseriu com sucesso, 1 caso contrário </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se inseriu com sucesso, 1 caso a pilha esteja cheia. </dd></dl>
 
 </div>
 </div>
@@ -332,11 +331,11 @@ Funções</h2></td></tr>
 <p>Remove um elemento na pilha.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>int 0 se removeu com sucesso, 1 caso contrário </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 0 se removeu com sucesso, 1 caso a pilha esteja vazia. </dd></dl>
 
 </div>
 </div>
@@ -359,11 +358,11 @@ Funções</h2></td></tr>
 <p>Retorna um ponteiro para o dado do elemento no topo da pilha.</p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>int* ponteiro para o elemento do início, NULL se vazio </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>int* ponteiro para o elemento do início, NULL caso a pilha esteja vazia. </dd></dl>
 
 </div>
 </div>
@@ -385,11 +384,11 @@ Funções</h2></td></tr>
 <p>Verifica se a pilha está vazia. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>ponteiro para a pilha </td></tr>
+    <tr><td class="paramname">p</td><td>ponteiro para a pilha. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>int 1 se vazia, 0 caso contrário </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>int 1 se vazia, 0 caso contrário. </dd></dl>
 
 </div>
 </div>

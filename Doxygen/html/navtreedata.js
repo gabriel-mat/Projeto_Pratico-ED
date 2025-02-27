@@ -26,17 +26,17 @@ var NAVTREE =
 [
   [ "Projeto Prático de ED", "index.html", [
     [ "Projeto prático - Estrutura de Dados - 🗼🇻🇳", "index.html", null ],
-    [ "Classes", "annotated.html", [
-      [ "Lista de Classes", "annotated.html", "annotated_dup" ],
-      [ "Índice dos Componentes", "classes.html", null ],
-      [ "Membros de classe", "functions.html", [
+    [ "Estruturas de dados", "annotated.html", [
+      [ "Estruturas de Dados", "annotated.html", "annotated_dup" ],
+      [ "Índice das Estruturas de Dados", "classes.html", null ],
+      [ "Campos de Dados", "functions.html", [
         [ "Todos", "functions.html", null ],
         [ "Variáveis", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Arquivos", "files.html", [
       [ "Lista de Arquivos", "files.html", "files_dup" ],
-      [ "Membros dos Arquivos", "globals.html", [
+      [ "Globais", "globals.html", [
         [ "Todos", "globals.html", null ],
         [ "Funções", "globals_func.html", null ],
         [ "Definições de Tipos", "globals_type.html", null ],
