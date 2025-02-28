@@ -120,12 +120,15 @@ void limpar_tela();
  * @param i Posição do vetor que deve ser inserido o elemento da pilha
  * @param v Vetor onde os elementos da pilha serão armazenados.
  */
-void copiar_pilha(pilha p1, int v[], int i) {
-    if (!pilha_vazia(p1)) {
-        int elemento = remover(p1); 
-        copiar_pilha(p1, v, i + 1); 
-        v[i] = elemento; 
-        inserir(p1, elemento); 
+void copiar_pilha(pilha p1, int v[], int i)
+{
+    if (!pilha_vazia(&p1))
+    {
+        int elemento = *pilha_topo(&p1);
+        pilha_remover(&p1);
+        copiar_pilha(p1, v, i + 1);
+        v[i] = elemento;
+        pilha_inserir(&p1, elemento);
     }
 }
 
@@ -362,9 +365,9 @@ int jogar_fase(iterador i)
 
         limpar_tela();
 
-        copiar_pilha(&A, A1);
-        copiar_pilha(&B, B2);
-        copiar_pilha(&C, C3);
+        copiar_pilha(A, A1, MAX_DISCOS);
+        copiar_pilha(B, B2, MAX_DISCOS);
+        copiar_pilha(C, C3, MAX_DISCOS);
 
         printf("Fase %d\n", num);
         printf("Movimentos restantes: %d\n", max_movs - movs);
@@ -436,7 +439,7 @@ void limpar_buffer()
 
 int vitoria(pilha *A, pilha *B, pilha *C)
 {
-    return (vazia(A) && (vazia(B) || vazia(C)));
+    return (pilha_vazia(A) && (pilha_vazia(B) || pilha_vazia(C)));
 }
 
 pilha criar_torre(int num)
