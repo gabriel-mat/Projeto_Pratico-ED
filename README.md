@@ -20,4 +20,4 @@ Leia mais [aqui](https://pt.wikipedia.org/wiki/Torre_de_Han%C3%B3i)
 
 <h6><a id="tad-note"></a>1: O conceito de TAD (Tipo Abstrato de Dados) é usado para criar modelos de dados encapsulados que expõem apenas as operações necessárias, escondendo os detalhes internos da implementação e melhorando a organização, modularidade e reutilização do código.</h6>
 
-<h6><a id="deque-note"></a>2: Double-ended queue</6>
+<h6><a id="deque-note"></a>2: Double-ended queue</h6>
