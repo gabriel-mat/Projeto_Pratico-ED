@@ -166,39 +166,33 @@ iterador ultimo(fila *f)
 }
 
 /**
- * \brief Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro. Como estamos tratando de uma lista circular, o iterador pode retornar.
+ * \brief Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro.
  *
  * \param i ponteiro para o iterador.
- * \return retorna 0 se ainda havia um próximo elemento, 1 caso contrário (o iterador deu a volta).
+ * \return retorna 0 se ainda havia um próximo elemento, 1 caso contrário.
  */
 int proximo(iterador *i)
 {
     i->posicao = i->posicao->next;
 
     if (acabou(*i))
-    {
-        i->posicao = i->posicao->next;
         return 1;
-    }
 
     return 0;
 }
 
 /**
- * \brief Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro. Como estamos tratando de uma lista circular, o iterador pode retornar.
+ * \brief Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro.
  *
  * \param i ponteiro para o iterador.
- * \return retorna 0 se ainda havia um elemento anterior, 1 caso contrário (o iterador deu a volta).
+ * \return retorna 0 se ainda havia um elemento anterior, 1 caso contrário.
  */
 int anterior(iterador *i)
 {
     i->posicao = i->posicao->prev;
 
     if (acabou(*i))
-    {
-        i->posicao = i->posicao->prev;
         return 1;
-    }
 
     return 0;
 }

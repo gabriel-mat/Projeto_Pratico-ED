@@ -122,14 +122,14 @@ void limpar_tela();
  */
 void copiar_pilha(pilha p1, int v[], int i)
 {
-    if (!pilha_vazia(&p1))
-    {
-        int elemento = *pilha_topo(&p1);
-        pilha_remover(&p1);
-        copiar_pilha(p1, v, i + 1);
-        v[i] = elemento;
-        pilha_inserir(&p1, elemento);
-    }
+    if (pilha_vazia(&p1))
+        return;
+
+    int elemento = *pilha_topo(&p1);
+    pilha_remover(&p1);
+    copiar_pilha(p1, v, i + 1);
+    v[i] = elemento;
+    pilha_inserir(&p1, elemento);
 }
 
 /**
@@ -365,9 +365,9 @@ int jogar_fase(iterador i)
 
         limpar_tela();
 
-        copiar_pilha(A, A1, MAX_DISCOS);
-        copiar_pilha(B, B2, MAX_DISCOS);
-        copiar_pilha(C, C3, MAX_DISCOS);
+        copiar_pilha(A, A1, 0);
+        copiar_pilha(B, B2, 0);
+        copiar_pilha(C, C3, 0);
 
         printf("Fase %d\n", num);
         printf("Movimentos restantes: %d\n", max_movs - movs);
