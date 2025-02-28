@@ -2,7 +2,7 @@
  * @file main.c
  * @authors André, Arthur, Gabriel e Otávio
  * @brief Arquivo principal
- * 
+ *
  * Arquivo principal com a implementação do quebra-cabeça.
  */
 
@@ -21,10 +21,16 @@
 #define NUM_FASES 5
 
 /**
+ * @def MAX_DISCOS
+ * Define o número máximo de discos em torres.
+ */
+#define MAX_DISCOS 5
+
+/**
  * @def MAX_COMANDO
  * Número máximo do vetor de comando.
  */
-#define MAX_COMANDO 15
+#define MAX_COMANDO 3
 
 // Protótipos de funções e procedimentos
 
@@ -104,22 +110,24 @@ pilha criar_torre(int num);
  */
 void limpar_tela();
 
-
 /**
  * @brief Copia os elementos de uma pilha para um vetor.
- * 
- * Esta função transfere os elementos de uma pilha para um vetor, 
+ *
+ * Esta função transfere os elementos de uma pilha para um vetor,
  * garantindo que a pilha original permaneça inalterada.
- * 
+ *
  * @param p1 Ponteiro para a pilha a ser copiada.
  * @param v Vetor onde os elementos da pilha serão armazenados.
  */
-void copiar_pilha(pilha* p1, int v[]){
+void copiar_pilha(pilha *p1, int v[])
+{
     int i = 0;
-    for(i = 0; i < 5 - pilha_tamanho(p1); i++){
+    for (i = 0; i < 5 - pilha_tamanho(p1); i++)
+    {
         v[i] = 0;
     }
-    while(!pilha_vazia(p1)){
+    while (!pilha_vazia(p1))
+    {
         v[i] = pilha_topo(p1);
         pilha_remover(p1);
         copiar_pilha(p1, v);
@@ -130,33 +138,38 @@ void copiar_pilha(pilha* p1, int v[]){
 
 /**
  * @brief Exibe um andar de uma torre.
- * 
+ *
  * Esta função imprime visualmente um andar específico de uma torre.
- * 
+ *
  * @param v Vetor que representa a torre.
  * @param andar O nível da torre a ser impresso (de 1 a 5).
  */
-void printar_andar_torre(int v[], int andar){
+void printar_andar_torre(int v[], int andar)
+{
     int espacos, discos;
     printf("  ");
     espacos = 5 - v[5 - andar];
-    while(espacos){
+    while (espacos)
+    {
         printf(" ");
         espacos--;
     }
     discos = v[5 - andar];
-    while(discos){
+    while (discos)
+    {
         printf("=");
         discos--;
     }
     printf("|");
     discos = v[5 - andar];
-    while(discos){
+    while (discos)
+    {
         printf("=");
         discos--;
     }
     espacos = 5 - v[5 - andar];
-    while(espacos){
+    while (espacos)
+    {
         printf(" ");
         espacos--;
     }
@@ -164,17 +177,19 @@ void printar_andar_torre(int v[], int andar){
 
 /**
  * @brief Exibe as torres do jogo.
- * 
+ *
  * Esta função imprime visualmente o estado atual das torres,
  * mostrando a disposição dos discos para o usuário.
- * 
+ *
  * @param v1 Vetor representando a primeira torre.
  * @param v2 Vetor representando a segunda torre.
  * @param v3 Vetor representando a terceira torre.
  */
-void printar_torre(int v1[], int v2[], int v3[]){
+void printar_torre(int v1[], int v2[], int v3[])
+{
     printf("       A            B            C\n");
-    for(int i = 5; i >= 1; i--){
+    for (int i = 5; i >= 1; i--)
+    {
         printar_andar_torre(v1, i);
         printar_andar_torre(v2, i);
         printar_andar_torre(v3, i);
@@ -282,7 +297,7 @@ void como_jogar()
     printf("\t\tUsar mais que o minimo de movimentos reiniciara seu progresso na fase atual!\n");
 
     printf("\n\tCOMANDOS\n");
-    printf("\t\tmv X Y\t|  move o disco do topo de X para o topo de Y;\n");
+    printf("\t\tX Y\t|  move o disco do topo de X para o topo de Y;\n");
 
     printf("\nLembre-se de considerar as regras do jogo e usar a notacao 'A', 'B' e 'C'\npressionte enter");
 
@@ -331,8 +346,10 @@ void msg_final()
 int jogar_fase(iterador i)
 {
     pilha A, B, C;
+    pilha *source, *dest;
     int movs, max_movs, num;
-    char comando[MAX_COMANDO + 1];
+    char comando[MAX_COMANDO + 1], src, dst;
+    int A1[MAX_DISCOS], B2[MAX_DISCOS], C3[MAX_DISCOS];
 
     movs = 0;
     num = (i.posicao)->data;
@@ -344,10 +361,78 @@ int jogar_fase(iterador i)
 
     while (!vitoria(&A, &B, &C))
     {
-        
+        if (movs >= max_movs)
+        {
+            msg_max_movs();
+            return 1;
+        }
+
+        limpar_tela();
+
+        copiar_pilha(&A, A1);
+        copiar_pilha(&B, B2);
+        copiar_pilha(&C, C3);
+
+        printf("Fase %d\n", num);
+        printf("Movimentos restantes: %d\n", max_movs - movs);
+        printar_torre(A1, B2, C3);
+
+        printf("\n\n");
+
+        scanf(" %s", comando);
+        src = comando[0];
+        dst = comando[2];
+
+        if (src == 'A')
+            source = &A;
+        else if (src == 'B')
+            source = &B;
+        else if (src == 'C')
+            source = &C;
+        else
+        {
+            printf("\nPilha de origem invalida!\n");
+            limpar_buffer();
+            getchar();
+            continue;
+        }
+
+        if (dst == 'A')
+            dest = &A;
+        else if (dst == 'B')
+            dest = &B;
+        else if (dst == 'C')
+            dest = &C;
+        else
+        {
+            printf("\nPilha de destino invalida!\n");
+            limpar_buffer();
+            getchar();
+            continue;
+        }
+
+        if (pilha_vazia(source))
+        {
+            printf("\nPilha de origem vazia!\n");
+            limpar_buffer();
+            getchar();
+            continue;
+        }
+
+        if (!pilha_vazia(dest) && (*(pilha_topo(source)) > *(pilha_topo(dest))))
+        {
+            printf("\nUm disco maior nao pode sobrepor um disco menor!\n");
+            limpar_buffer();
+            getchar();
+            continue;
+        }
+
+        pilha_inserir(dest, *(pilha_topo(source)));
+        pilha_remover(source);
+        movs++;
     }
 
-    return 1;
+    return 0;
 }
 
 void limpar_buffer()
