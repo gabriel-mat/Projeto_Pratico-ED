@@ -131,7 +131,9 @@ $(function(){initNavTree('main_8c.html',''); initResizable(true); });
 Definições e Macros</h2></td></tr>
 <tr class="memitem:a3f6ecde955f54d249ea5cc39741f2e54" id="r_a3f6ecde955f54d249ea5cc39741f2e54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f6ecde955f54d249ea5cc39741f2e54">NUM_FASES</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a3f6ecde955f54d249ea5cc39741f2e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f729a30b4cbe12230cfd86ba7e5d4ef" id="r_a1f729a30b4cbe12230cfd86ba7e5d4ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f729a30b4cbe12230cfd86ba7e5d4ef">MAX_COMANDO</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memitem:a319c6555c5bed66a5227a08d72478c43" id="r_a319c6555c5bed66a5227a08d72478c43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a319c6555c5bed66a5227a08d72478c43">MAX_DISCOS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a319c6555c5bed66a5227a08d72478c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f729a30b4cbe12230cfd86ba7e5d4ef" id="r_a1f729a30b4cbe12230cfd86ba7e5d4ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f729a30b4cbe12230cfd86ba7e5d4ef">MAX_COMANDO</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:a1f729a30b4cbe12230cfd86ba7e5d4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -151,17 +153,31 @@ Funções</h2></td></tr>
 <tr class="memitem:af85dcf7f1ea9191f2851e5241e121d06" id="r_af85dcf7f1ea9191f2851e5241e121d06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af85dcf7f1ea9191f2851e5241e121d06">msg_max_movs</a> ()</td></tr>
 <tr class="memdesc:af85dcf7f1ea9191f2851e5241e121d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra ao usuário uma mensagem caso ele atinja o número máximo de movimentos.  <br /></td></tr>
 <tr class="separator:af85dcf7f1ea9191f2851e5241e121d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30952aa93e9ca9b1e62e70226159d64d" id="r_a30952aa93e9ca9b1e62e70226159d64d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30952aa93e9ca9b1e62e70226159d64d">msg_final</a> ()</td></tr>
+<tr class="memdesc:a30952aa93e9ca9b1e62e70226159d64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra ao usuário uma mensagem caso ele passe por todas as fases.  <br /></td></tr>
+<tr class="separator:a30952aa93e9ca9b1e62e70226159d64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79ac624f20d876fd446b46bbc153fc58" id="r_a79ac624f20d876fd446b46bbc153fc58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79ac624f20d876fd446b46bbc153fc58">limpar_buffer</a> ()</td></tr>
 <tr class="memdesc:a79ac624f20d876fd446b46bbc153fc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa o buffer de entrada para que a próxima entrada seja lida corretamente.  <br /></td></tr>
 <tr class="separator:a79ac624f20d876fd446b46bbc153fc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba12dbb9e6be4419cd29092ae41cdbad" id="r_aba12dbb9e6be4419cd29092ae41cdbad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba12dbb9e6be4419cd29092ae41cdbad">jogar_fase</a> (int num)</td></tr>
-<tr class="separator:aba12dbb9e6be4419cd29092ae41cdbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c4af7cda5f75beb4837944299b11701" id="r_a0c4af7cda5f75beb4837944299b11701"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c4af7cda5f75beb4837944299b11701">jogar_fase</a> (<a class="el" href="structiterador.html">iterador</a> i)</td></tr>
+<tr class="separator:a0c4af7cda5f75beb4837944299b11701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2553bd53bd732c299a96bae468573002" id="r_a2553bd53bd732c299a96bae468573002"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2553bd53bd732c299a96bae468573002">vitoria</a> (<a class="el" href="structpilha.html">pilha</a> *A, <a class="el" href="structpilha.html">pilha</a> *B, <a class="el" href="structpilha.html">pilha</a> *C)</td></tr>
+<tr class="separator:a2553bd53bd732c299a96bae468573002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a897857b2a68555f066ec3469678fdaf5" id="r_a897857b2a68555f066ec3469678fdaf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpilha.html">pilha</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a897857b2a68555f066ec3469678fdaf5">criar_torre</a> (int num)</td></tr>
 <tr class="memdesc:a897857b2a68555f066ec3469678fdaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa a torre inical com os discos.  <br /></td></tr>
 <tr class="separator:a897857b2a68555f066ec3469678fdaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d086ec4c843d3d7c68afbd5dd5c9eee" id="r_a4d086ec4c843d3d7c68afbd5dd5c9eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d086ec4c843d3d7c68afbd5dd5c9eee">limpar_tela</a> ()</td></tr>
 <tr class="memdesc:a4d086ec4c843d3d7c68afbd5dd5c9eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa o terminal do usuário. Essa função limpa o terminal do usuário de acordo com o sistema operacional utilizado.  <br /></td></tr>
 <tr class="separator:a4d086ec4c843d3d7c68afbd5dd5c9eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0462009a8aa79d14daf8f79fbedf5a9c" id="r_a0462009a8aa79d14daf8f79fbedf5a9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0462009a8aa79d14daf8f79fbedf5a9c">copiar_pilha</a> (<a class="el" href="structpilha.html">pilha</a> *p1, int v[])</td></tr>
+<tr class="memdesc:a0462009a8aa79d14daf8f79fbedf5a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copia os elementos de uma pilha para um vetor.  <br /></td></tr>
+<tr class="separator:a0462009a8aa79d14daf8f79fbedf5a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4627cbe9fec145143ee0fcdf91de9e3f" id="r_a4627cbe9fec145143ee0fcdf91de9e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4627cbe9fec145143ee0fcdf91de9e3f">printar_andar_torre</a> (int v[], int andar)</td></tr>
+<tr class="memdesc:a4627cbe9fec145143ee0fcdf91de9e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe um andar de uma torre.  <br /></td></tr>
+<tr class="separator:a4627cbe9fec145143ee0fcdf91de9e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adecbe598a2e1bdea123961e9b4d5c3da" id="r_adecbe598a2e1bdea123961e9b4d5c3da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adecbe598a2e1bdea123961e9b4d5c3da">printar_torre</a> (int v1[], int v2[], int v3[])</td></tr>
+<tr class="memdesc:adecbe598a2e1bdea123961e9b4d5c3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe as torres do jogo.  <br /></td></tr>
+<tr class="separator:adecbe598a2e1bdea123961e9b4d5c3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -177,11 +193,26 @@ Funções</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_COMANDO&#160;&#160;&#160;15</td>
+          <td class="memname">#define MAX_COMANDO&#160;&#160;&#160;3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Número máximo do vetor de comando. </p>
+
+</div>
+</div>
+<a id="a319c6555c5bed66a5227a08d72478c43" name="a319c6555c5bed66a5227a08d72478c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319c6555c5bed66a5227a08d72478c43">&#9670;&#160;</a></span>MAX_DISCOS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_DISCOS&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Define o número máximo de discos em torres. </p>
 
 </div>
 </div>
@@ -217,6 +248,37 @@ Funções</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Mostra ao usuário instruções de como utilizar corretamente a aplicação. </p>
+
+</div>
+</div>
+<a id="a0462009a8aa79d14daf8f79fbedf5a9c" name="a0462009a8aa79d14daf8f79fbedf5a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0462009a8aa79d14daf8f79fbedf5a9c">&#9670;&#160;</a></span>copiar_pilha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void copiar_pilha </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>p1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copia os elementos de uma pilha para um vetor. </p>
+<p>Esta função transfere os elementos de uma pilha para um vetor, garantindo que a pilha original permaneça inalterada.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Ponteiro para a pilha a ser copiada. </td></tr>
+    <tr><td class="paramname">v</td><td>Vetor onde os elementos da pilha serão armazenados. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -265,8 +327,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="aba12dbb9e6be4419cd29092ae41cdbad" name="aba12dbb9e6be4419cd29092ae41cdbad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba12dbb9e6be4419cd29092ae41cdbad">&#9670;&#160;</a></span>jogar_fase()</h2>
+<a id="a0c4af7cda5f75beb4837944299b11701" name="a0c4af7cda5f75beb4837944299b11701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4af7cda5f75beb4837944299b11701">&#9670;&#160;</a></span>jogar_fase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,14 +336,14 @@ Funções</h2></td></tr>
         <tr>
           <td class="memname">int jogar_fase </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structiterador.html">iterador</a></td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">num</td><td></td></tr>
+    <tr><td class="paramname">i</td><td>iterador para a fase </td></tr>
   </table>
   </dd>
 </dl>
@@ -364,6 +426,25 @@ Funções</h2></td></tr>
 
 </div>
 </div>
+<a id="a30952aa93e9ca9b1e62e70226159d64d" name="a30952aa93e9ca9b1e62e70226159d64d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30952aa93e9ca9b1e62e70226159d64d">&#9670;&#160;</a></span>msg_final()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void msg_final </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mostra ao usuário uma mensagem caso ele passe por todas as fases. </p>
+
+</div>
+</div>
 <a id="af85dcf7f1ea9191f2851e5241e121d06" name="af85dcf7f1ea9191f2851e5241e121d06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af85dcf7f1ea9191f2851e5241e121d06">&#9670;&#160;</a></span>msg_max_movs()</h2>
 
@@ -383,6 +464,74 @@ Funções</h2></td></tr>
 
 </div>
 </div>
+<a id="a4627cbe9fec145143ee0fcdf91de9e3f" name="a4627cbe9fec145143ee0fcdf91de9e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4627cbe9fec145143ee0fcdf91de9e3f">&#9670;&#160;</a></span>printar_andar_torre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printar_andar_torre </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>andar</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exibe um andar de uma torre. </p>
+<p>Esta função imprime visualmente um andar específico de uma torre.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Vetor que representa a torre. </td></tr>
+    <tr><td class="paramname">andar</td><td>O nível da torre a ser impresso (de 1 a 5). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adecbe598a2e1bdea123961e9b4d5c3da" name="adecbe598a2e1bdea123961e9b4d5c3da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adecbe598a2e1bdea123961e9b4d5c3da">&#9670;&#160;</a></span>printar_torre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printar_torre </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v3</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exibe as torres do jogo. </p>
+<p>Esta função imprime visualmente o estado atual das torres, mostrando a disposição dos discos para o usuário.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>Vetor representando a primeira torre. </td></tr>
+    <tr><td class="paramname">v2</td><td>Vetor representando a segunda torre. </td></tr>
+    <tr><td class="paramname">v3</td><td>Vetor representando a terceira torre. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a54347c4f849025f724fcf8dec5c6dfb2" name="a54347c4f849025f724fcf8dec5c6dfb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54347c4f849025f724fcf8dec5c6dfb2">&#9670;&#160;</a></span>regras()</h2>
 
@@ -399,6 +548,41 @@ Funções</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Mostra ao usuário regras básicas do quebra-cabeça "Torre de hanói". </p>
+
+</div>
+</div>
+<a id="a2553bd53bd732c299a96bae468573002" name="a2553bd53bd732c299a96bae468573002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2553bd53bd732c299a96bae468573002">&#9670;&#160;</a></span>vitoria()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vitoria </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>B</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpilha.html">pilha</a> *</td>          <td class="paramname"><span class="paramname"><em>C</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td></td></tr>
+    <tr><td class="paramname">B</td><td></td></tr>
+    <tr><td class="paramname">C</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>int </dd></dl>
 
 </div>
 </div>
