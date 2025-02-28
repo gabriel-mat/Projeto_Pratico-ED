@@ -93,4 +93,12 @@ int *pilha_topo(pilha *p);
 
 void pilha_imprimir(pilha *p);
 
+/**
+ * \brief Retorna o tamanho da pilha.
+ *
+ * \param p ponteiro para a pilha.
+ * \return quantos elementos estão dentro da pilha.
+ */
+int pilha_tamanho(pilha *p);
+
 #endif
