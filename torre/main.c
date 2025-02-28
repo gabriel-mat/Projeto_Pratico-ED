@@ -78,7 +78,7 @@ void msg_final();
 void limpar_buffer();
 
 /**
- * @brief
+ * @brief Executa a fase representada pelo nó apontado pelo iterador.
  *
  * @param i iterador para a fase
  * @return int
@@ -86,11 +86,11 @@ void limpar_buffer();
 int jogar_fase(iterador i);
 
 /**
- * @brief
+ * @brief Verifica se a fase foi vencida ou não
  *
- * @param A
- * @param B
- * @param C
+ * @param A apontador para a primeira torre
+ * @param B apontador para a segunda torre
+ * @param C apontador para a terceira torre
  * @return int
  */
 int vitoria(pilha *A, pilha *B, pilha *C);

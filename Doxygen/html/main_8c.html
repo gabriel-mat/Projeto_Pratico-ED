@@ -160,8 +160,10 @@ Funções</h2></td></tr>
 <tr class="memdesc:a79ac624f20d876fd446b46bbc153fc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa o buffer de entrada para que a próxima entrada seja lida corretamente.  <br /></td></tr>
 <tr class="separator:a79ac624f20d876fd446b46bbc153fc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c4af7cda5f75beb4837944299b11701" id="r_a0c4af7cda5f75beb4837944299b11701"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c4af7cda5f75beb4837944299b11701">jogar_fase</a> (<a class="el" href="structiterador.html">iterador</a> i)</td></tr>
+<tr class="memdesc:a0c4af7cda5f75beb4837944299b11701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa a fase representada pelo nó apontado pelo iterador.  <br /></td></tr>
 <tr class="separator:a0c4af7cda5f75beb4837944299b11701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2553bd53bd732c299a96bae468573002" id="r_a2553bd53bd732c299a96bae468573002"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2553bd53bd732c299a96bae468573002">vitoria</a> (<a class="el" href="structpilha.html">pilha</a> *A, <a class="el" href="structpilha.html">pilha</a> *B, <a class="el" href="structpilha.html">pilha</a> *C)</td></tr>
+<tr class="memdesc:a2553bd53bd732c299a96bae468573002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fase foi vencida ou não.  <br /></td></tr>
 <tr class="separator:a2553bd53bd732c299a96bae468573002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4969ed39507244317b461c47894edb43" id="r_a4969ed39507244317b461c47894edb43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpilha.html">pilha</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4969ed39507244317b461c47894edb43">criar_torre</a> (int num)</td></tr>
 <tr class="memdesc:a4969ed39507244317b461c47894edb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa a torre inical com os discos.  <br /></td></tr>
@@ -347,6 +349,8 @@ Funções</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Executa a fase representada pelo nó apontado pelo iterador. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>iterador para a fase </td></tr>
@@ -580,11 +584,13 @@ Funções</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Verifica se a fase foi vencida ou não. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">A</td><td></td></tr>
-    <tr><td class="paramname">B</td><td></td></tr>
-    <tr><td class="paramname">C</td><td></td></tr>
+    <tr><td class="paramname">A</td><td>apontador para a primeira torre </td></tr>
+    <tr><td class="paramname">B</td><td>apontador para a segunda torre </td></tr>
+    <tr><td class="paramname">C</td><td>apontador para a terceira torre </td></tr>
   </table>
   </dd>
 </dl>
