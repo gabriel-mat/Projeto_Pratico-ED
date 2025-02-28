@@ -99,9 +99,9 @@ int vitoria(pilha *A, pilha *B, pilha *C);
  * @brief Inicializa a torre inical com os discos.
  *
  * @param num Número de discos da torre.
- * @return pilha: Torre com os discos prontos para o ínicio do jogo.
+ * @return pilha: Ponteiro para torre com os discos prontos para o ínicio do jogo.
  */
-pilha criar_torre(int num);
+pilha *criar_torre(int num);
 
 /**
  * @brief Limpa o terminal do usuário.
@@ -120,16 +120,16 @@ void limpar_tela();
  * @param i Posição do vetor que deve ser inserido o elemento da pilha
  * @param v Vetor onde os elementos da pilha serão armazenados.
  */
-void copiar_pilha(pilha p1, int v[], int i)
+void copiar_pilha(pilha *p1, int v[], int i)
 {
-    if (pilha_vazia(&p1))
+    if (pilha_vazia(p1))
         return;
 
-    int elemento = *pilha_topo(&p1);
-    pilha_remover(&p1);
+    int elemento = *pilha_topo(p1);
+    pilha_remover(p1);
     copiar_pilha(p1, v, i + 1);
     v[i] = elemento;
-    pilha_inserir(&p1, elemento);
+    pilha_inserir(p1, elemento);
 }
 
 /**
@@ -341,7 +341,7 @@ void msg_final()
 
 int jogar_fase(iterador i)
 {
-    pilha A, B, C;
+    pilha *A, *B, *C;
     pilha *source, *dest;
     int movs, max_movs, num;
     char comando[MAX_COMANDO + 1], src, dst;
@@ -355,7 +355,7 @@ int jogar_fase(iterador i)
     B = criar_torre(0);
     C = criar_torre(0);
 
-    while (!vitoria(&A, &B, &C))
+    while (!vitoria(A, B, C))
     {
         if (movs >= max_movs)
         {
@@ -380,11 +380,11 @@ int jogar_fase(iterador i)
         dst = comando[2];
 
         if (src == 'A')
-            source = &A;
+            source = A;
         else if (src == 'B')
-            source = &B;
+            source = B;
         else if (src == 'C')
-            source = &C;
+            source = C;
         else
         {
             printf("\nPilha de origem invalida!\n");
@@ -394,11 +394,11 @@ int jogar_fase(iterador i)
         }
 
         if (dst == 'A')
-            dest = &A;
+            dest = A;
         else if (dst == 'B')
-            dest = &B;
+            dest = B;
         else if (dst == 'C')
-            dest = &C;
+            dest = C;
         else
         {
             printf("\nPilha de destino invalida!\n");
@@ -428,6 +428,10 @@ int jogar_fase(iterador i)
         movs++;
     }
 
+    pilha_destruir(A);
+    pilha_destruir(B);
+    pilha_destruir(C);
+
     return 0;
 }
 
@@ -442,14 +446,14 @@ int vitoria(pilha *A, pilha *B, pilha *C)
     return (pilha_vazia(A) && (pilha_vazia(B) || pilha_vazia(C)));
 }
 
-pilha criar_torre(int num)
+pilha *criar_torre(int num)
 {
-    pilha p;
+    pilha *p = (pilha *)malloc(sizeof(pilha));
 
-    pilha_inicializa(&p);
+    pilha_inicializa(p);
 
     for (int i = num; i > 0; i--)
-        pilha_inserir(&p, i);
+        pilha_inserir(p, i);
 
     return (p);
 }
