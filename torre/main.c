@@ -81,7 +81,7 @@ void limpar_buffer();
  * @brief Executa a fase representada pelo nó apontado pelo iterador.
  *
  * @param i iterador para a fase
- * @return int
+ * @return int: retorna 1 se gastar todos os movimentos, 0 caso consiga resolver
  */
 int jogar_fase(iterador i);
 
@@ -91,7 +91,7 @@ int jogar_fase(iterador i);
  * @param A apontador para a primeira torre
  * @param B apontador para a segunda torre
  * @param C apontador para a terceira torre
- * @return int
+ * @return int: retorna 1 no caso da vitória, 0 caso contrário
  */
 int vitoria(pilha *A, pilha *B, pilha *C);
 
