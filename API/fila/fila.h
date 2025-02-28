@@ -73,9 +73,8 @@ typedef struct iterador
  * \brief Inicializa uma fila.
  *
  * \param f ponteiro para a fila.
- * \param maxsize tamanho máximo da fila.
  */
-void fila_inicializa(fila *f, unsigned maxsize);
+void fila_inicializa(fila *f);
 
 /**
  * \brief Destroi uma fila.

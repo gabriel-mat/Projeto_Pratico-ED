@@ -14,7 +14,7 @@
  * \param f ponteiro para a fila.
  * \param maxsize tamanho máximo da fila.
  */
-void fila_inicializa(fila *f, unsigned maxsize)
+void fila_inicializa(fila *f)
 {
     node *sent = (node *)malloc(sizeof(node));
     sent->prev = sent->next = f->sentinela = sent;
