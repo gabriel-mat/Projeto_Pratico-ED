@@ -117,22 +117,15 @@ void limpar_tela();
  * garantindo que a pilha original permaneça inalterada.
  *
  * @param p1 Ponteiro para a pilha a ser copiada.
+ * @param i Posição do vetor que deve ser inserido o elemento da pilha
  * @param v Vetor onde os elementos da pilha serão armazenados.
  */
-void copiar_pilha(pilha *p1, int v[])
-{
-    int i = 0;
-    for (i = 0; i < 5 - pilha_tamanho(p1); i++)
-    {
-        v[i] = 0;
-    }
-    while (!pilha_vazia(p1))
-    {
-        v[i] = pilha_topo(p1);
-        pilha_remover(p1);
-        copiar_pilha(p1, v);
-        pilha_inserir(p1, v[i]);
-        i++;
+void copiar_pilha(pilha p1, int v[], int i) {
+    if (!pilha_vazia(p1)) {
+        int elemento = remover(p1); 
+        copiar_pilha(p1, v, i + 1); 
+        v[i] = elemento; 
+        inserir(p1, elemento); 
     }
 }
 
