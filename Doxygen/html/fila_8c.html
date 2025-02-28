@@ -123,9 +123,9 @@ $(function(){initNavTree('fila_8c.html',''); initResizable(true); });
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funções</h2></td></tr>
-<tr class="memitem:ac50e48e199b8edcc68938c91c890062e" id="r_ac50e48e199b8edcc68938c91c890062e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac50e48e199b8edcc68938c91c890062e">fila_inicializa</a> (<a class="el" href="structfila.html">fila</a> *f, unsigned maxsize)</td></tr>
-<tr class="memdesc:ac50e48e199b8edcc68938c91c890062e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma fila.  <br /></td></tr>
-<tr class="separator:ac50e48e199b8edcc68938c91c890062e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9fc8b023a8cc1a3b452c2466d7ed71" id="r_afd9fc8b023a8cc1a3b452c2466d7ed71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd9fc8b023a8cc1a3b452c2466d7ed71">fila_inicializa</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
+<tr class="memdesc:afd9fc8b023a8cc1a3b452c2466d7ed71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma fila.  <br /></td></tr>
+<tr class="separator:afd9fc8b023a8cc1a3b452c2466d7ed71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7012e752fb56a30d9cf8f2060b461894" id="r_a7012e752fb56a30d9cf8f2060b461894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7012e752fb56a30d9cf8f2060b461894">fila_destruir</a> (<a class="el" href="structfila.html">fila</a> *f)</td></tr>
 <tr class="memdesc:a7012e752fb56a30d9cf8f2060b461894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroi uma fila.  <br /></td></tr>
 <tr class="separator:a7012e752fb56a30d9cf8f2060b461894"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,10 +154,10 @@ Funções</h2></td></tr>
 <tr class="memdesc:a4a3d849c803f30ece5a0b509c9749bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o iterador para o último elemento da fila.  <br /></td></tr>
 <tr class="separator:a4a3d849c803f30ece5a0b509c9749bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9481b48b15bbc495371202157bd28002" id="r_a9481b48b15bbc495371202157bd28002"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9481b48b15bbc495371202157bd28002">proximo</a> (<a class="el" href="structiterador.html">iterador</a> *i)</td></tr>
-<tr class="memdesc:a9481b48b15bbc495371202157bd28002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro. Como estamos tratando de uma lista circular, o iterador pode retornar.  <br /></td></tr>
+<tr class="memdesc:a9481b48b15bbc495371202157bd28002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro.  <br /></td></tr>
 <tr class="separator:a9481b48b15bbc495371202157bd28002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a171fca57a7effb209c5df208ca9607d9" id="r_a171fca57a7effb209c5df208ca9607d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a171fca57a7effb209c5df208ca9607d9">anterior</a> (<a class="el" href="structiterador.html">iterador</a> *i)</td></tr>
-<tr class="memdesc:a171fca57a7effb209c5df208ca9607d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro. Como estamos tratando de uma lista circular, o iterador pode retornar.  <br /></td></tr>
+<tr class="memdesc:a171fca57a7effb209c5df208ca9607d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro.  <br /></td></tr>
 <tr class="separator:a171fca57a7effb209c5df208ca9607d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48a58bc5fa9d9b02ef517befcf1f4d27" id="r_a48a58bc5fa9d9b02ef517befcf1f4d27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a58bc5fa9d9b02ef517befcf1f4d27">acabou</a> (<a class="el" href="structiterador.html">iterador</a> i)</td></tr>
 <tr class="memdesc:a48a58bc5fa9d9b02ef517befcf1f4d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o iterador está apontando para o sentinela da fila.  <br /></td></tr>
@@ -209,15 +209,14 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro. Como estamos tratando de uma lista circular, o iterador pode retornar. </p>
-<p>Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro.</p>
+<p>Retorna o iterador para o elemento anterior a partir do iterador recebido como parâmetro. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>ponteiro para o iterador. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>retorna 0 se ainda havia um elemento anterior, 1 caso contrário (o iterador deu a volta). </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 0 se ainda havia um elemento anterior, 1 caso contrário. </dd></dl>
 
 </div>
 </div>
@@ -272,8 +271,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="ac50e48e199b8edcc68938c91c890062e" name="ac50e48e199b8edcc68938c91c890062e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac50e48e199b8edcc68938c91c890062e">&#9670;&#160;</a></span>fila_inicializa()</h2>
+<a id="afd9fc8b023a8cc1a3b452c2466d7ed71" name="afd9fc8b023a8cc1a3b452c2466d7ed71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9fc8b023a8cc1a3b452c2466d7ed71">&#9670;&#160;</a></span>fila_inicializa()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,12 +280,8 @@ Funções</h2></td></tr>
         <tr>
           <td class="memname">void fila_inicializa </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>maxsize</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -478,15 +473,14 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro. Como estamos tratando de uma lista circular, o iterador pode retornar. </p>
-<p>Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro.</p>
+<p>Retorna o iterador para o próximo elemento da fila a partir do iterador recebido como parâmetro. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>ponteiro para o iterador. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>retorna 0 se ainda havia um próximo elemento, 1 caso contrário (o iterador deu a volta). </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna 0 se ainda havia um próximo elemento, 1 caso contrário. </dd></dl>
 
 </div>
 </div>

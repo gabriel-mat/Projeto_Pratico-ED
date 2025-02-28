@@ -163,15 +163,15 @@ Funções</h2></td></tr>
 <tr class="separator:a0c4af7cda5f75beb4837944299b11701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2553bd53bd732c299a96bae468573002" id="r_a2553bd53bd732c299a96bae468573002"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2553bd53bd732c299a96bae468573002">vitoria</a> (<a class="el" href="structpilha.html">pilha</a> *A, <a class="el" href="structpilha.html">pilha</a> *B, <a class="el" href="structpilha.html">pilha</a> *C)</td></tr>
 <tr class="separator:a2553bd53bd732c299a96bae468573002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a897857b2a68555f066ec3469678fdaf5" id="r_a897857b2a68555f066ec3469678fdaf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpilha.html">pilha</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a897857b2a68555f066ec3469678fdaf5">criar_torre</a> (int num)</td></tr>
-<tr class="memdesc:a897857b2a68555f066ec3469678fdaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa a torre inical com os discos.  <br /></td></tr>
-<tr class="separator:a897857b2a68555f066ec3469678fdaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4969ed39507244317b461c47894edb43" id="r_a4969ed39507244317b461c47894edb43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpilha.html">pilha</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4969ed39507244317b461c47894edb43">criar_torre</a> (int num)</td></tr>
+<tr class="memdesc:a4969ed39507244317b461c47894edb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa a torre inical com os discos.  <br /></td></tr>
+<tr class="separator:a4969ed39507244317b461c47894edb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d086ec4c843d3d7c68afbd5dd5c9eee" id="r_a4d086ec4c843d3d7c68afbd5dd5c9eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d086ec4c843d3d7c68afbd5dd5c9eee">limpar_tela</a> ()</td></tr>
 <tr class="memdesc:a4d086ec4c843d3d7c68afbd5dd5c9eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa o terminal do usuário. Essa função limpa o terminal do usuário de acordo com o sistema operacional utilizado.  <br /></td></tr>
 <tr class="separator:a4d086ec4c843d3d7c68afbd5dd5c9eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0462009a8aa79d14daf8f79fbedf5a9c" id="r_a0462009a8aa79d14daf8f79fbedf5a9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0462009a8aa79d14daf8f79fbedf5a9c">copiar_pilha</a> (<a class="el" href="structpilha.html">pilha</a> *p1, int v[])</td></tr>
-<tr class="memdesc:a0462009a8aa79d14daf8f79fbedf5a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copia os elementos de uma pilha para um vetor.  <br /></td></tr>
-<tr class="separator:a0462009a8aa79d14daf8f79fbedf5a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95a1c562864d8022037fc285ad904ff" id="r_ad95a1c562864d8022037fc285ad904ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad95a1c562864d8022037fc285ad904ff">copiar_pilha</a> (<a class="el" href="structpilha.html">pilha</a> *p1, int v[], int i)</td></tr>
+<tr class="memdesc:ad95a1c562864d8022037fc285ad904ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copia os elementos de uma pilha para um vetor.  <br /></td></tr>
+<tr class="separator:ad95a1c562864d8022037fc285ad904ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4627cbe9fec145143ee0fcdf91de9e3f" id="r_a4627cbe9fec145143ee0fcdf91de9e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4627cbe9fec145143ee0fcdf91de9e3f">printar_andar_torre</a> (int v[], int andar)</td></tr>
 <tr class="memdesc:a4627cbe9fec145143ee0fcdf91de9e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe um andar de uma torre.  <br /></td></tr>
 <tr class="separator:a4627cbe9fec145143ee0fcdf91de9e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,8 +251,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="a0462009a8aa79d14daf8f79fbedf5a9c" name="a0462009a8aa79d14daf8f79fbedf5a9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0462009a8aa79d14daf8f79fbedf5a9c">&#9670;&#160;</a></span>copiar_pilha()</h2>
+<a id="ad95a1c562864d8022037fc285ad904ff" name="ad95a1c562864d8022037fc285ad904ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad95a1c562864d8022037fc285ad904ff">&#9670;&#160;</a></span>copiar_pilha()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +265,12 @@ Funções</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>[]&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -275,6 +280,7 @@ Funções</h2></td></tr>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">p1</td><td>Ponteiro para a pilha a ser copiada. </td></tr>
+    <tr><td class="paramname">i</td><td>Posição do vetor que deve ser inserido o elemento da pilha </td></tr>
     <tr><td class="paramname">v</td><td>Vetor onde os elementos da pilha serão armazenados. </td></tr>
   </table>
   </dd>
@@ -282,14 +288,14 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="a897857b2a68555f066ec3469678fdaf5" name="a897857b2a68555f066ec3469678fdaf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a897857b2a68555f066ec3469678fdaf5">&#9670;&#160;</a></span>criar_torre()</h2>
+<a id="a4969ed39507244317b461c47894edb43" name="a4969ed39507244317b461c47894edb43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4969ed39507244317b461c47894edb43">&#9670;&#160;</a></span>criar_torre()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structpilha.html">pilha</a> criar_torre </td>
+          <td class="memname"><a class="el" href="structpilha.html">pilha</a> * criar_torre </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num</em></span></td><td>)</td>
           <td></td>
@@ -304,7 +310,7 @@ Funções</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Retorna</dt><dd>pilha: Torre com os discos prontos para o ínicio do jogo. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>pilha: Ponteiro para torre com os discos prontos para o ínicio do jogo. </dd></dl>
 
 </div>
 </div>
