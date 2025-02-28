@@ -357,6 +357,8 @@ int jogar_fase(iterador i)
 
     while (!vitoria(A, B, C))
     {
+        limpar_tela();
+
         if (movs >= max_movs)
         {
             msg_max_movs();
@@ -364,15 +366,16 @@ int jogar_fase(iterador i)
             pilha_destruir(A);
             pilha_destruir(B);
             pilha_destruir(C);
-            
+
             return 1;
         }
 
-        limpar_tela();
+        for (int i = 0; i < 5; i++)
+            A1[i] = B2[i] = C3[i] = 0;
 
-        copiar_pilha(A, A1, 0);
-        copiar_pilha(B, B2, 0);
-        copiar_pilha(C, C3, 0);
+        copiar_pilha(A, A1, 5 - pilha_tamanho(A));
+        copiar_pilha(B, B2, 5 - pilha_tamanho(B));
+        copiar_pilha(C, C3, 5 - pilha_tamanho(C));
 
         printf("Fase %d\n", num);
         printf("Movimentos restantes: %d\n", max_movs - movs);
@@ -380,7 +383,7 @@ int jogar_fase(iterador i)
 
         printf("\n\n");
 
-        scanf(" %s", comando);
+        scanf(" %[^\n]", comando);
         src = comando[0];
         dst = comando[2];
 
