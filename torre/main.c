@@ -252,7 +252,7 @@ void iniciar()
     iterador it;
     fila fases;
 
-    fila_inicializa(&fases, NUM_FASES);
+    fila_inicializa(&fases);
 
     for (int i = 1; i <= NUM_FASES; i++)
         fila_inserir(&fases, i);
@@ -360,6 +360,11 @@ int jogar_fase(iterador i)
         if (movs >= max_movs)
         {
             msg_max_movs();
+
+            pilha_destruir(A);
+            pilha_destruir(B);
+            pilha_destruir(C);
+            
             return 1;
         }
 
