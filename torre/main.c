@@ -325,7 +325,7 @@ void msg_max_movs()
 
     printf("\tGAME OVER\n");
     printf("\tNumero maximo de movimentos atingido, tente novamente!\n");
-    limpar_buffer();
+    printf("\npressione enter\n");
     getchar();
 }
 
@@ -381,7 +381,7 @@ int jogar_fase(iterador i)
         printf("Movimentos restantes: %d\n", max_movs - movs);
         printar_torre(A1, B2, C3);
 
-        printf("\n\n");
+        printf("\nmove ");
 
         scanf(" %[^\n]", comando);
         src = comando[0];
@@ -395,7 +395,7 @@ int jogar_fase(iterador i)
             source = C;
         else
         {
-            printf("\nPilha de origem invalida!\n");
+            printf("\nPilha de origem invalida!\npressione enter");
             limpar_buffer();
             getchar();
             continue;
@@ -409,7 +409,7 @@ int jogar_fase(iterador i)
             dest = C;
         else
         {
-            printf("\nPilha de destino invalida!\n");
+            printf("\nPilha de destino invalida!\npressione enter");
             limpar_buffer();
             getchar();
             continue;
@@ -417,7 +417,7 @@ int jogar_fase(iterador i)
 
         if (pilha_vazia(source))
         {
-            printf("\nPilha de origem vazia!\n");
+            printf("\nPilha de origem vazia!\npressione enter");
             limpar_buffer();
             getchar();
             continue;
@@ -425,7 +425,7 @@ int jogar_fase(iterador i)
 
         if (!pilha_vazia(dest) && (*(pilha_topo(source)) > *(pilha_topo(dest))))
         {
-            printf("\nUm disco maior nao pode sobrepor um disco menor!\n");
+            printf("\nUm disco maior nao pode sobrepor um disco menor!\npressione enter");
             limpar_buffer();
             getchar();
             continue;
