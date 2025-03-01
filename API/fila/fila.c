@@ -32,7 +32,6 @@ void fila_destruir(fila *f)
         fila_remover(f);
 
     free(f->sentinela);
-    f->sentinela = NULL;
 }
 
 /**

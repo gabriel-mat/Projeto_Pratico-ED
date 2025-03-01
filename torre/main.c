@@ -37,15 +37,17 @@
 /**
  * @brief Mostra ao usuário o menu principal do jogo.
  * @details Esse menu é composto pelas opções de "iniciar", "como jogar" e "regras".
+ * @param fases Um ponteiro para a fila de fases
  *
  */
-void menu();
+void menu(fila *fases);
 
 /**
  * @brief Inicia o jogo.
+ * @param fases Um ponteiro para a fila de fases
  *
  */
-void iniciar();
+void iniciar(fila *fases);
 
 /**
  * @brief Mostra ao usuário instruções de como utilizar corretamente a aplicação.
@@ -196,14 +198,20 @@ void printar_torre(int v1[], int v2[], int v3[])
 int main()
 {
     int codigo;
+    fila fases;
+
+    fila_inicializa(&fases);
 
     // Exibindo o menu e recebendo a opção do usuário
-    menu();
+    menu(&fases);
+
+    // Finalizando o programa
+    fila_destruir(&fases);
 
     return 0;
 }
 
-void menu()
+void menu(fila *fases)
 {
     int opt;
 
@@ -215,6 +223,7 @@ void menu()
         printf("\tiniciar\t\t01\n");
         printf("\tcomo jogar\t02\n");
         printf("\tregras\t\t03\n");
+        printf("\tsair\t\t04\n");
 
         printf("\ninsira o codigo do comando: ");
         scanf("%d", &opt);
@@ -223,7 +232,7 @@ void menu()
         {
         case 1:
             opt = 0;
-            iniciar();
+            iniciar(fases);
             break;
 
         case 2:
@@ -236,6 +245,10 @@ void menu()
             regras();
             break;
 
+        case 4:
+            opt = 1;
+            break;
+
         default:
             opt = 0;
             printf("Comando invalido! Tente novamente.");
@@ -246,18 +259,15 @@ void menu()
     } while (!opt);
 }
 
-void iniciar()
+void iniciar(fila *fases)
 {
     int game_over, fim;
     iterador it;
-    fila fases;
-
-    fila_inicializa(&fases);
 
     for (int i = 1; i <= NUM_FASES; i++)
-        fila_inserir(&fases, i);
+        fila_inserir(fases, i);
 
-    it = primeiro(&fases);
+    it = primeiro(fases);
 
     for (int i = 0; i < NUM_FASES; i++)
     {
