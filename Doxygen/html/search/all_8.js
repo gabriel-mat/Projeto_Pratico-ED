@@ -6,7 +6,7 @@ var searchData=
   ['max_5fdiscos_3',['MAX_DISCOS',['../main_8c.html#a319c6555c5bed66a5227a08d72478c43',1,'main.c']]],
   ['max_5fsize_4',['MAX_SIZE',['../pilha_8c.html#a0592dba56693fad79136250c11e5a7fe',1,'pilha.c']]],
   ['max_5fsize_5',['max_size',['../structdeque.html#a79e1c28868e63d6c55899d26fa5514f4',1,'deque']]],
-  ['menu_6',['menu',['../main_8c.html#a2a0e843767aeea4f433a28b9c54f573a',1,'main.c']]],
+  ['menu_6',['menu',['../main_8c.html#a2954b8393feed888b08ae8cdf47fdbab',1,'main.c']]],
   ['msg_5ffinal_7',['msg_final',['../main_8c.html#a30952aa93e9ca9b1e62e70226159d64d',1,'main.c']]],
   ['msg_5fmax_5fmovs_8',['msg_max_movs',['../main_8c.html#af85dcf7f1ea9191f2851e5241e121d06',1,'main.c']]]
 ];

@@ -138,12 +138,12 @@ Definições e Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funções</h2></td></tr>
-<tr class="memitem:a2a0e843767aeea4f433a28b9c54f573a" id="r_a2a0e843767aeea4f433a28b9c54f573a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a0e843767aeea4f433a28b9c54f573a">menu</a> ()</td></tr>
-<tr class="memdesc:a2a0e843767aeea4f433a28b9c54f573a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra ao usuário o menu principal do jogo.  <br /></td></tr>
-<tr class="separator:a2a0e843767aeea4f433a28b9c54f573a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9578c4a1aaa21df0131a4fbd46b49be2" id="r_a9578c4a1aaa21df0131a4fbd46b49be2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9578c4a1aaa21df0131a4fbd46b49be2">iniciar</a> ()</td></tr>
-<tr class="memdesc:a9578c4a1aaa21df0131a4fbd46b49be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia o jogo.  <br /></td></tr>
-<tr class="separator:a9578c4a1aaa21df0131a4fbd46b49be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2954b8393feed888b08ae8cdf47fdbab" id="r_a2954b8393feed888b08ae8cdf47fdbab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2954b8393feed888b08ae8cdf47fdbab">menu</a> (<a class="el" href="structfila.html">fila</a> *fases)</td></tr>
+<tr class="memdesc:a2954b8393feed888b08ae8cdf47fdbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra ao usuário o menu principal do jogo.  <br /></td></tr>
+<tr class="separator:a2954b8393feed888b08ae8cdf47fdbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4121c9db8073e9c847681fc6f3185c46" id="r_a4121c9db8073e9c847681fc6f3185c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4121c9db8073e9c847681fc6f3185c46">iniciar</a> (<a class="el" href="structfila.html">fila</a> *fases)</td></tr>
+<tr class="memdesc:a4121c9db8073e9c847681fc6f3185c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia o jogo.  <br /></td></tr>
+<tr class="separator:a4121c9db8073e9c847681fc6f3185c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5a787751db199c6b2775463c0572a6" id="r_a3d5a787751db199c6b2775463c0572a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d5a787751db199c6b2775463c0572a6">como_jogar</a> ()</td></tr>
 <tr class="memdesc:a3d5a787751db199c6b2775463c0572a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostra ao usuário instruções de como utilizar corretamente a aplicação.  <br /></td></tr>
 <tr class="separator:a3d5a787751db199c6b2775463c0572a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,8 +316,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="a9578c4a1aaa21df0131a4fbd46b49be2" name="a9578c4a1aaa21df0131a4fbd46b49be2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9578c4a1aaa21df0131a4fbd46b49be2">&#9670;&#160;</a></span>iniciar()</h2>
+<a id="a4121c9db8073e9c847681fc6f3185c46" name="a4121c9db8073e9c847681fc6f3185c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4121c9db8073e9c847681fc6f3185c46">&#9670;&#160;</a></span>iniciar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,13 +325,19 @@ Funções</h2></td></tr>
         <tr>
           <td class="memname">void iniciar </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>fases</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Inicia o jogo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fases</td><td>Um ponteiro para a fila de fases </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -416,8 +422,8 @@ Funções</h2></td></tr>
 
 </div>
 </div>
-<a id="a2a0e843767aeea4f433a28b9c54f573a" name="a2a0e843767aeea4f433a28b9c54f573a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a0e843767aeea4f433a28b9c54f573a">&#9670;&#160;</a></span>menu()</h2>
+<a id="a2954b8393feed888b08ae8cdf47fdbab" name="a2954b8393feed888b08ae8cdf47fdbab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2954b8393feed888b08ae8cdf47fdbab">&#9670;&#160;</a></span>menu()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,14 +431,19 @@ Funções</h2></td></tr>
         <tr>
           <td class="memname">void menu </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structfila.html">fila</a> *</td>          <td class="paramname"><span class="paramname"><em>fases</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Mostra ao usuário o menu principal do jogo. </p>
-<p>Esse menu é composto pelas opções de "iniciar", "como jogar" e "regras". </p>
+<p>Esse menu é composto pelas opções de "iniciar", "como jogar" e "regras". </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fases</td><td>Um ponteiro para a fila de fases </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
